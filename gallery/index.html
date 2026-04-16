@@ -1,0 +1,6271 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 16, 2026 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="system"
+      data-hbb-relurl="/">
+  
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.10.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+  
+  
+  <meta name="description" content="Intelligent Systems and Learning Lab. @ DGIST" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/gallery/" />
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+    
+    
+      
+      
+      
+      
+        
+      
+    
+    
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+    
+    
+      
+      
+      
+      
+        
+      
+    
+    
+  
+
+
+
+
+<style>
+   
+     
+  
+   
+  :root {
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-100: oklch(0.93 0.034 272.788);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-200: oklch(0.87 0.065 274.039);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-300: oklch(0.785 0.115 274.713);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-400: oklch(0.673 0.182 276.935);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-50: oklch(0.962 0.018 272.314);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-500: oklch(0.585 0.233 277.117);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-600: oklch(0.511 0.262 276.966);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-700: oklch(0.457 0.24 277.023);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-800: oklch(0.398 0.195 277.366);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-900: oklch(0.359 0.144 278.697);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-950: oklch(0.257 0.09 281.288);
+    
+    
+    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
+       in case something accesses the raw -rgb var directly, though unlikely */
+    --hb-primary-500-rgb: 128 128 128; 
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-100: oklch(0.932 0.032 255.585);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-200: oklch(0.882 0.059 254.128);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-300: oklch(0.809 0.105 251.813);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-400: oklch(0.707 0.165 254.624);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-50: oklch(0.97 0.014 254.604);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-500: oklch(0.623 0.214 259.815);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-600: oklch(0.546 0.245 262.881);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-700: oklch(0.488 0.243 264.376);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-800: oklch(0.424 0.199 265.638);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-900: oklch(0.379 0.146 265.522);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-950: oklch(0.282 0.091 267.935);
+    
+    
+    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
+       in case something accesses the raw -rgb var directly, though unlikely */
+    --hb-secondary-500-rgb: 128 128 128; 
+  
+
+
+
+
+
+
+--color-background: #ffffff;
+--color-foreground: #111827;
+
+
+--color-header-bg: #f1f5f9;
+--color-header-fg: #0f172a;
+
+
+--color-footer-bg: #f3f4f6;
+--color-footer-fg: #0f172a;
+
+    
+  }
+
+   
+  .dark {
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-100: oklch(0.932 0.032 255.585);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-200: oklch(0.882 0.059 254.128);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-300: oklch(0.809 0.105 251.813);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-400: oklch(0.707 0.165 254.624);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-50: oklch(0.97 0.014 254.604);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-500: oklch(0.623 0.214 259.815);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-600: oklch(0.546 0.245 262.881);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-700: oklch(0.488 0.243 264.376);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-800: oklch(0.424 0.199 265.638);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-900: oklch(0.379 0.146 265.522);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-950: oklch(0.282 0.091 267.935);
+    
+    
+    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
+       in case something accesses the raw -rgb var directly, though unlikely */
+    --hb-primary-500-rgb: 128 128 128; 
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-100: oklch(0.953 0.051 180.801);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-200: oklch(0.91 0.096 180.426);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-300: oklch(0.855 0.138 181.071);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-400: oklch(0.777 0.152 181.912);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-50: oklch(0.984 0.014 180.72);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-500: oklch(0.704 0.14 182.503);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-600: oklch(0.6 0.118 184.704);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-700: oklch(0.511 0.096 186.391);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-800: oklch(0.437 0.078 188.216);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-900: oklch(0.386 0.063 188.416);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-950: oklch(0.277 0.046 192.524);
+    
+    
+    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
+       in case something accesses the raw -rgb var directly, though unlikely */
+    --hb-secondary-500-rgb: 128 128 128; 
+  
+
+
+
+
+
+
+--color-background: #0f172a;
+--color-foreground: #f8fafc;
+
+
+--color-header-bg: #0f172a;
+--color-header-fg: #f8fafc;
+
+
+--color-footer-bg: #111827;
+--color-footer-fg: #e5e7eb;
+
+    
+  }
+   
+</style>
+
+
+  
+  
+
+  
+  
+  
+    
+
+  
+  
+  
+  
+  
+  
+  
+    
+      <link rel="stylesheet" href="/css/_entry.css">
+    
+  
+
+
+  
+
+  
+  
+  
+
+  
+    
+    <link href="/css/custom.min.7f83831174e21b4513661cdaca532de5d2229288d247c74dc66752653bf4ab33.css" rel="stylesheet" />
+  
+
+  <script src="/js/hb-head.min.js"></script>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    <link rel="alternate" href="/gallery/index.xml" type="application/rss+xml" title="" />
+  
+
+  
+  
+  
+    <link rel="icon" type="image/png" href="/media/icon_hu_86cdaf2f328898c0.png" />
+  
+  
+  
+  
+    
+      <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_8b8256cf55eeeae1.png" />
+    
+  
+
+  <link rel="canonical" href="http://localhost:1313/gallery/" />
+
+  
+  
+  
+
+  
+  
+  
+
+    
+    
+    
+      
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@BuildLore" />
+    <meta property="twitter:creator" content="@BuildLore" />
+  
+  <meta property="og:site_name" content="" />
+  <meta property="og:url" content="http://localhost:1313/gallery/" />
+  <meta property="og:title" content="Gallery | " />
+  <meta property="og:description" content="Intelligent Systems and Learning Lab. @ DGIST" /><meta property="og:image" content="http://localhost:1313/media/logo_hu_79f3ecb4fd6143a8.png" />
+    <meta property="twitter:image" content="http://localhost:1313/media/logo_hu_79f3ecb4fd6143a8.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2024-01-01T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@id": "http://localhost:1313/gallery/",
+  "@type": "CollectionPage",
+  "dateModified": "2024-01-01T00:00:00Z",
+  "description": "Intelligent Systems and Learning Lab. @ DGIST",
+  "inLanguage": "en-us",
+  "isPartOf": {
+    "@id": "http://localhost:1313/",
+    "@type": "WebSite",
+    "name": "",
+    "url": "http://localhost:1313/"
+  },
+  "name": "Gallery",
+  "url": "http://localhost:1313/gallery/"
+}
+</script>
+
+
+
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "item": "http://localhost:1313/",
+      "name": "Home",
+      "position": 1
+    },
+    {
+      "item": "http://localhost:1313/gallery/",
+      "name": "Gallery",
+      "position": 2
+    }
+  ]
+}
+    </script>
+
+
+
+
+
+
+  <title>Gallery | </title>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <style>
+    :root {
+       
+      --hb-font-size-base: 1rem;
+      --hb-font-size-scale: 1.25;
+      
+       
+      --hb-radius: 0.5rem;
+      --hb-spacing-base: 1rem;
+      --hb-spacing-section: 4rem;
+    }
+    
+    
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format(woff2);
+    }
+    
+  </style>
+
+  
+
+  
+  
+
+
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+        
+          
+          
+        
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <script
+    defer
+    src="/js/hugo-blox-en.min.js"
+    integrity=""
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+  <script>console.log('✓ Alpine.js loading on demand');</script>
+  
+  
+  <script src="/dist/lib/alpinejs/cdn.min.e041f1b639d1e6b2fc2736d8d7638a409afcd444a6ec90446f8f4e44fa36f406.js" integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" defer></script>
+
+
+
+
+<script defer src="/js/hb-search.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+</head>
+
+  <body class="bg-[var(--color-background)] text-[var(--color-foreground)] page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+          
+
+<header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-start">
+    <div class="order-0 h-full">
+      
+      <a class="navbar-brand" href="/" title="">
+        
+        
+          
+            <img
+              fetchpriority="high"
+              decoding="async"
+              class=""
+              width="101"
+              height="36"
+              src="/media/logo_hu_a80af021cbadb5b9.png"
+              alt="" />
+          
+        
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-[var(--color-header-fg)] lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-start
+      ">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/"
+        >Home</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/people/"
+        >Members</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/research/"
+        >Research</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/publications/"
+        >Publications</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/project/"
+        >Project</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/news/"
+        >News</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          
+          href="/gallery/"
+        >Gallery</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/contact/"
+        >Contact</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="toggle search"
+        class="inline-block px-3 text-xl text-[var(--color-header-fg)] hover:text-primary-500 cursor-pointer"
+        data-search-toggle>
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-[var(--color-header-fg)] hover:text-primary-500
+            [&.active]:font-bold [&.active]:text-primary-500">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="block dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="hidden dark:block">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div
+  x-data="searchModal()"
+  x-show="$store.search.open"
+  @keydown.escape.window="$store.search.open = false"
+  @keydown.cmd.k.window.prevent="$store.search.open = !$store.search.open"
+  @keydown.ctrl.k.window.prevent="$store.search.open = !$store.search.open"
+  x-cloak
+  class="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm"
+  style="display: none;"
+>
+  
+  <div class="absolute inset-0" @click="$store.search.open = false"></div>
+  
+  
+  <div 
+    class="relative mx-auto mt-[10vh] max-w-3xl"
+    x-show="$store.search.open"
+    x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0 translate-y-4 scale-95"
+    x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+    x-transition:leave="transition ease-in duration-150"
+    x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+    x-transition:leave-end="opacity-0 translate-y-4 scale-95"
+  >
+    <div class="mx-4 overflow-hidden rounded-2xl bg-white dark:bg-gray-900 shadow-2xl ring-1 ring-gray-900/10 dark:ring-white/10">
+      
+      
+      <div class="border-b border-gray-200 dark:border-gray-800">
+        <div class="flex items-center gap-3 px-4 py-3">
+          
+          
+          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          
+          
+          <input
+            x-ref="searchInput"
+            x-model="query"
+            @input="loading = query.trim() !== ''"
+            @input.debounce.300ms="search()"
+            type="text"
+            placeholder="Search for answers..."
+            class="flex-1 bg-transparent text-lg outline-none text-gray-900 dark:text-gray-100 placeholder-gray-400"
+            autocomplete="off"
+            autofocus
+          />
+          
+          
+          <div x-show="loading" class="flex-shrink-0">
+            <svg class="animate-spin h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          </div>
+          
+          
+          <kbd class="hidden sm:block flex-shrink-0 rounded bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-600 dark:bg-gray-800 dark:text-gray-400">ESC</kbd>
+          
+          
+    <button
+            @click="$store.search.open = false"
+            class="flex-shrink-0 rounded-lg p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300 cursor-pointer"
+    >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+        
+        <div x-show="query && availableFilters.length > 0" x-transition class="border-t border-gray-100 dark:border-gray-800 px-4 py-2">
+          <div class="flex flex-wrap gap-2">
+            <button
+              @click="activeFilter = null; search()"
+              :class="activeFilter === null ? 'bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300' : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400'"
+              class="rounded-full px-3 py-1 text-xs font-medium transition-colors cursor-pointer"
+            >
+              All Results
+            </button>
+            <template x-for="filter in availableFilters" :key="filter.filterKey">
+              <button
+                @click="activeFilter = filter.filterKey; search()"
+                :class="activeFilter === filter.filterKey ? 'bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300' : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400'"
+                class="rounded-full px-3 py-1 text-xs font-medium transition-colors cursor-pointer"
+                x-text="filter.label + ' (' + filter.count + ')'"
+              ></button>
+            </template>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="max-h-[60vh] overflow-y-auto">
+        
+        
+        <div x-show="!query && results.length === 0" class="p-6">
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+        
+        
+        <div x-show="query && results.length > 0" class="divide-y divide-gray-200 dark:divide-gray-800">
+          <template x-for="(result, index) in results" :key="result.id">
+            <a
+              :href="result.url"
+              @mouseenter="selectedIndex = index"
+              @click="$store.search.open = false"
+              :class="selectedIndex === index ? 'bg-primary-50 dark:bg-primary-900/20 border-l-2 border-primary-600' : ''"
+              class="block px-6 py-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group search-result"
+            >
+              
+              <div class="flex items-center gap-2 mb-2 flex-wrap">
+                
+                <span
+                  x-show="result.filters && result.filters.type"
+                  :class="{
+                    'bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300': result.filters.type && result.filters.type[0] === 'questions',
+                    'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300': result.filters.type && result.filters.type[0] === 'faq',
+                    'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300': result.filters.type && result.filters.type[0] === 'docs'
+                  }"
+                  class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium"
+                  x-text="result.filters.type ? (typeLabels[result.filters.type[0]] || result.filters.type[0]) : ''"
+                ></span>
+                
+                
+                <span 
+                  x-show="result.filters && result.filters.category" 
+                  class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300"
+                  x-text="result.filters.category ? result.filters.category[0] : ''"
+                ></span>
+                
+                
+                <span 
+                  x-show="result.filters && result.filters.difficulty" 
+                  class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300"
+                  x-text="result.filters.difficulty ? result.filters.difficulty[0] : ''"
+                ></span>
+              </div>
+              
+              
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors mb-2" x-html="result.meta.title || 'Untitled'"></h3>
+              
+              
+              <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2" x-html="result.excerpt"></p>
+            </a>
+          </template>
+        </div>
+        
+        
+        <div x-show="query && loading" class="px-6 py-16 text-center">
+          <div class="inline-flex items-center gap-3">
+            <svg class="animate-spin h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <div class="text-left">
+              <p class="text-lg font-medium text-gray-900 dark:text-white">Searching...</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400" x-text="'Finding results for &quot;' + query + '&quot;'"></p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div x-show="query && results.length === 0 && !loading && hasSearched" class="px-6 py-12 text-center">
+          <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">No results found</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-400" x-text="'No results for &quot;' + query + '&quot;'"></p>
+          <button
+            @click="query = ''; $refs.searchInput.focus()"
+            class="mt-4 text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium"
+          >
+            Clear search
+          </button>
+        </div>
+      </div>
+      
+      
+      <div class="border-t border-gray-200 dark:border-gray-800 px-4 py-3 bg-gray-50 dark:bg-gray-900/50">
+        <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+          <div class="flex items-center gap-3">
+            <span class="flex items-center gap-1">
+              <kbd class="rounded bg-white dark:bg-gray-800 px-1.5 py-0.5 font-mono text-[10px] font-semibold border border-gray-300 dark:border-gray-700">↑↓</kbd>
+              Navigate
+            </span>
+            <span class="flex items-center gap-1">
+              <kbd class="rounded bg-white dark:bg-gray-800 px-1.5 py-0.5 font-mono text-[10px] font-semibold border border-gray-300 dark:border-gray-700">↵</kbd>
+              Select
+            </span>
+            <span x-show="availableFilters.length > 0" class="flex items-center gap-1">
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+              </svg>
+              <span x-text="availableFilters.length + ' filters'"></span>
+            </span>
+          </div>
+          <a href="https://hugoblox.com" target="_blank" rel="noopener" class="flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            Powered by Hugo Blox
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  function searchModal() {
+    return {
+      query: '',
+      results: [],
+      loading: false,
+      hasSearched: false,  
+      selectedIndex: -1,
+      activeFilter: null,
+      availableFilters: [],
+      trendingSearches: "[\"Search term 1\",\"Search term 2\"]",
+      pagefind: null,
+      pagefindModulePath: window.hbb?.assetPaths?.pagefind ?? '/pagefind/pagefind.js',
+      
+      
+      typeLabels: {
+        'questions': "\"Questions\"",
+        'faq': "\"FAQ\"",
+        'docs': "\"Documentation\""
+      },
+      
+      async init() {
+        
+        try {
+          this.pagefind = await import(this.pagefindModulePath);
+          await this.pagefind.init();
+          console.log('✓ Pagefind initialized');
+          
+          
+          await this.loadFilters();
+        } catch (error) {
+          console.error('Failed to initialize Pagefind:', error);
+        }
+        
+        
+        this.$watch('$store.search.open', (open) => {
+          if (open) {
+            this.$nextTick(() => this.$refs.searchInput?.focus());
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = '';
+            this.query = '';
+            this.results = [];
+            this.selectedIndex = -1;
+            this.hasSearched = false;  
+          }
+        });
+        
+        
+        window.addEventListener('keydown', (e) => {
+          if (!this.$store.search.open || this.results.length === 0) return;
+          
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            this.selectedIndex = this.selectedIndex < this.results.length - 1 ? this.selectedIndex + 1 : 0;
+            this.scrollToSelected();
+          } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            this.selectedIndex = this.selectedIndex > 0 ? this.selectedIndex - 1 : this.results.length - 1;
+            this.scrollToSelected();
+          } else if (e.key === 'Enter' && this.selectedIndex >= 0) {
+            e.preventDefault();
+            const selected = this.results[this.selectedIndex];
+            if (selected) {
+              window.location.href = selected.url;
+              this.$store.search.open = false;
+            }
+          }
+        });
+      },
+      
+      scrollToSelected() {
+        this.$nextTick(() => {
+          const selectedEl = document.querySelector('.search-result:nth-child(' + (this.selectedIndex + 1) + ')');
+          if (selectedEl) {
+            selectedEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          }
+        });
+      },
+      
+      async search() {
+        if (!this.query.trim()) {
+          this.results = [];
+          this.hasSearched = false;
+          return;
+        }
+        
+        this.loading = true;
+        this.hasSearched = false;  
+        
+        try {
+          const options = {};
+          
+          
+          if (this.activeFilter) {
+            const [filterCategory, filterValue] = this.activeFilter.split(':');
+            options.filters = { [filterCategory]: filterValue };
+          }
+          
+          const search = await this.pagefind.search(this.query, options);
+          console.log('Search results:', search);
+          console.log('Search filters:', search.filters);
+          
+          
+          this.results = await Promise.all(
+            search.results.slice(0, 10).map(async (result) => {
+              const data = await result.data();
+              console.log('Result data:', data);
+              return {
+                id: data.url,
+                url: data.url,
+                meta: data.meta,
+                excerpt: data.excerpt,
+                filters: data.filters || {}
+              };
+            })
+          );
+          
+          
+          const filterCounts = { type: {}, category: {}, difficulty: {} };
+          
+          this.results.forEach(result => {
+            if (result.filters) {
+              
+              if (result.filters.type) {
+                result.filters.type.forEach(val => {
+                  filterCounts.type[val] = (filterCounts.type[val] || 0) + 1;
+                });
+              }
+              
+              if (result.filters.category) {
+                result.filters.category.forEach(val => {
+                  filterCounts.category[val] = (filterCounts.category[val] || 0) + 1;
+                });
+              }
+              
+              if (result.filters.difficulty) {
+                result.filters.difficulty.forEach(val => {
+                  filterCounts.difficulty[val] = (filterCounts.difficulty[val] || 0) + 1;
+                });
+              }
+            }
+          });
+          
+          console.log('Extracted filter counts from results:', filterCounts);
+          
+          
+          const filters = [];
+          
+          
+          Object.entries(filterCounts.type).forEach(([value, count]) => {
+            filters.push({
+              category: 'type',
+              value,
+              label: this.typeLabels[value] || value.charAt(0).toUpperCase() + value.slice(1),
+              count,
+              filterKey: `type:${value}`
+            });
+          });
+          
+          
+          Object.entries(filterCounts.category).forEach(([value, count]) => {
+            filters.push({
+              category: 'category',
+              value,
+              label: value,
+              count,
+              filterKey: `category:${value}`
+            });
+          });
+          
+          
+          Object.entries(filterCounts.difficulty).forEach(([value, count]) => {
+            filters.push({
+              category: 'difficulty',
+              value,
+              label: value,
+              count,
+              filterKey: `difficulty:${value}`
+            });
+          });
+          
+          this.availableFilters = filters;
+          console.log('Final availableFilters array:', this.availableFilters);
+          
+          
+          if (this.results.length > 0) {
+            this.selectedIndex = 0;
+          }
+        } catch (error) {
+          console.error('Search error:', error);
+          this.results = [];
+        } finally {
+          this.loading = false;
+          this.hasSearched = true;  
+        }
+      },
+      
+      async loadFilters() {
+        
+        try {
+          const search = await this.pagefind.search('');
+          console.log('Available Pagefind filters:', search.filters);
+          
+          const filters = [];
+          
+          
+          if (search.filters && search.filters.type) {
+            Object.entries(search.filters.type).forEach(([value, count]) => {
+              filters.push({
+                category: 'type',
+                value,
+                label: value.charAt(0).toUpperCase() + value.slice(1),
+                count,
+                filterKey: `type:${value}`
+              });
+            });
+          }
+          
+          
+          if (search.filters && search.filters.category) {
+            Object.entries(search.filters.category).forEach(([value, count]) => {
+              filters.push({
+                category: 'category',
+                value,
+                label: value,
+                count,
+                filterKey: `category:${value}`
+              });
+            });
+          }
+          
+          
+          if (search.filters && search.filters.difficulty) {
+            Object.entries(search.filters.difficulty).forEach(([value, count]) => {
+              filters.push({
+                category: 'difficulty',
+                value,
+                label: value,
+                count,
+                filterKey: `difficulty:${value}`
+              });
+            });
+          }
+          
+          this.availableFilters = filters;
+          console.log('Processed filters:', this.availableFilters);
+        } catch (error) {
+          console.error('Failed to load filters:', error);
+        }
+      }
+    };
+  }
+  
+  
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('search', {
+      open: false
+    });
+  });
+</script>
+
+<style>
+  [x-cloak] { display: none !important; }
+</style>
+
+
+        
+      
+    </div>
+    
+    <div class="page-body ">
+      
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+    
+  
+
+  
+
+  
+  <section id="gallery" class="relative  hbb-section blox-markdown  bg-gray-100 dark:bg-gray-900" style="padding: 2rem 0 2rem 0;">
+    
+    
+    <div class="home-section-bg " >
+      
+    </div>
+    
+
+
+
+
+
+
+
+
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    Gallery
+  </div>
+
+  
+  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose">
+
+
+<style>
+  #gallery .container,
+  #gallery .prose,
+  section[id="gallery"] .container,
+  section[id="gallery"] .prose,
+  section[id="gallery"] > *,
+  section[id="gallery"] > * > *,
+  [id="gallery"] .container,
+  [id="gallery"] .prose,
+  [id="gallery"] > div,
+  [id="gallery"] > div > div {
+    max-width: 1300px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  section[id="gallery"] [class*="max-w"],
+  [id="gallery"] [class*="max-w"] {
+    max-width: 1300px !important;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .gallery-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 3.4rem;
+  }
+
+  .gallery-filter-btn {
+    display: inline-block;
+    border: 1px solid rgb(148 163 184 / 0.5);
+    border-radius: 999px;
+    padding: 0.46rem 0.98rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #334155;
+    background: rgb(248 250 252 / 0.9);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .gallery-filter-btn:hover {
+    border-color: rgb(59 130 246 / 0.7);
+    color: #1d4ed8;
+    transform: translateY(-1px);
+  }
+
+  .gallery-filter-btn.is-active {
+    color: #1d4ed8;
+    background: #dbeafe;
+    border-color: #3b82f6;
+  }
+
+  .dark .gallery-filter-btn {
+    border-color: rgb(148 163 184 / 0.45);
+    color: #cbd5e1;
+    background: rgb(30 41 59 / 0.86);
+  }
+
+  .dark .gallery-filter-btn:hover {
+    border-color: rgb(96 165 250 / 0.75);
+    color: #bfdbfe;
+  }
+
+  .dark .gallery-filter-btn.is-active {
+    color: #bfdbfe;
+    background: rgb(30 58 138 / 0.45);
+    border-color: rgb(96 165 250 / 0.8);
+  }
+
+  @media (min-width: 640px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .gallery-card {
+    position: relative;
+    display: block;
+    border: 0;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    padding: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.22s ease;
+    box-shadow: 0 10px 20px -16px rgba(15, 23, 42, 0.55);
+  }
+
+  .gallery-card::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  .gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 36px -16px rgba(15, 23, 42, 0.66);
+  }
+
+  .gallery-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(2, 6, 23, 0.72) 0%, rgba(2, 6, 23, 0.22) 42%, rgba(2, 6, 23, 0.08) 70%, rgba(2, 6, 23, 0) 100%);
+    pointer-events: none;
+  }
+
+  .gallery-card-cover {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    vertical-align: top;
+    margin: 0 !important;
+  }
+
+  .gallery-card-overlay {
+    position: absolute;
+    right: 0.85rem;
+    bottom: 0.75rem;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.26rem;
+    max-width: calc(100% - 1.7rem);
+    text-align: right;
+  }
+
+  .gallery-card-title {
+    margin: 0;
+    font-size: 1.04rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #f8fafc;
+    text-shadow: 0 2px 6px rgba(2, 6, 23, 0.45);
+  }
+
+  .gallery-card-category {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #bfdbfe;
+    text-shadow: 0 1px 3px rgba(2, 6, 23, 0.45);
+  }
+
+  .gallery-card-badges {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.35rem;
+  }
+
+   
+  .gallery-card-badges .bg-blue-100 {
+    background-color: rgb(186 230 253 / 0.52) !important;
+  }
+
+  .gallery-card-badges .text-blue-800 {
+    color: rgb(30 64 175) !important;
+    font-weight: 700 !important;
+  }
+
+  .dark .gallery-card-badges .dark\:bg-blue-900\/40 {
+    background-color: rgb(30 58 138 / 0.4) !important;
+  }
+
+  .dark .gallery-card-badges .dark\:text-blue-200 {
+    color: rgb(191 219 254) !important;
+  }
+
+  .gallery-card-count {
+    margin: 0;
+    font-size: 0.78rem;
+    color: #cbd5e1;
+    text-shadow: 0 1px 3px rgba(2, 6, 23, 0.45);
+  }
+
+  .gallery-empty {
+    margin: 0;
+    color: #64748b;
+  }
+
+  .gallery-viewer {
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.88);
+    z-index: 80;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .gallery-viewer.is-open {
+    display: flex;
+  }
+
+  .gallery-viewer-panel {
+    width: min(1060px, 100%);
+    border-radius: 0.85rem;
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    overflow: hidden;
+  }
+
+  .gallery-viewer-toolbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.9rem 1rem 0.32rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+  }
+
+  .gallery-viewer-meta {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+  }
+
+  .gallery-viewer-category {
+    margin: 0;
+    font-size: 1.04rem;
+    font-weight: 800;
+    line-height: 1.28;
+    color: #1d4ed8;
+  }
+
+  .gallery-viewer-title {
+    margin: 0;
+    font-size: 1.34rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #0f172a;
+  }
+
+  .gallery-viewer-date {
+    margin: 0.3rem 0 0;
+    font-size: 0.92rem;
+    line-height: 1.25;
+    color: #64748b;
+  }
+
+  .gallery-viewer-close {
+    border: 0;
+    background: transparent;
+    color: #475569;
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.1rem 0.35rem;
+  }
+
+  .gallery-viewer-body {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr) 3rem;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.02rem 0.6rem 0.9rem;
+  }
+
+  .gallery-viewer-nav {
+    border: 0;
+    border-radius: 999px;
+    width: 2.35rem;
+    height: 2.35rem;
+    background: rgba(148, 163, 184, 0.24);
+    color: #334155;
+    cursor: pointer;
+    justify-self: center;
+  }
+
+  .gallery-viewer-image-wrap {
+    text-align: center;
+  }
+
+  .gallery-viewer-image-frame {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+  }
+
+  .gallery-viewer-image {
+    max-height: min(70vh, 760px);
+    width: auto;
+    max-width: 100%;
+    border-radius: 0.45rem;
+    display: inline-block;
+  }
+
+  .gallery-viewer-photo-page {
+    position: absolute;
+    bottom: 0.72rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.28rem 0.62rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.52);
+    color: #1e293b;
+    font-size: 0.74rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    backdrop-filter: blur(3px);
+  }
+
+  .dark .gallery-viewer-panel {
+    background: #0f172a;
+    border-color: rgba(148, 163, 184, 0.38);
+  }
+
+  .dark .gallery-viewer-toolbar {
+    border-bottom-color: rgba(148, 163, 184, 0.24);
+  }
+
+  .dark .gallery-viewer-category {
+    color: #60a5fa;
+  }
+
+  .dark .gallery-viewer-title {
+    color: #f8fafc;
+  }
+
+  .dark .gallery-viewer-date {
+    color: #94a3b8;
+  }
+
+  .dark .gallery-viewer-close {
+    color: #cbd5e1;
+  }
+
+  .dark .gallery-viewer-nav {
+    background: rgba(51, 65, 85, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.32);
+    color: #e2e8f0;
+  }
+
+  .dark .gallery-viewer-photo-page {
+    background: rgba(30, 58, 138, 0.38);
+    border-color: rgba(96, 165, 250, 0.72);
+    color: #bfdbfe;
+  }
+
+  @media (max-width: 640px) {
+    .gallery-viewer-meta {
+      gap: 0.22rem;
+    }
+
+    .gallery-viewer-category {
+      font-size: 0.92rem;
+    }
+
+    .gallery-viewer-title {
+      font-size: 1.16rem;
+    }
+
+    .gallery-viewer-date {
+      margin-top: 0.22rem;
+      font-size: 0.82rem;
+    }
+
+    .gallery-viewer-body {
+      grid-template-columns: 2.2rem minmax(0, 1fr) 2.2rem;
+      padding: 0.02rem 0.3rem 0.7rem;
+    }
+
+    .gallery-viewer-nav {
+      width: 2rem;
+      height: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .gallery-card-overlay {
+      right: 0.68rem;
+      bottom: 0.62rem;
+      max-width: calc(100% - 1.36rem);
+    }
+
+    .gallery-card-title {
+      font-size: 0.94rem;
+    }
+  }
+</style>
+
+<div class="gallery-filters" id="gallery-filters">
+  <button type="button" class="gallery-filter-btn is-active" data-filter="all">ALL</button>
+  <button type="button" class="gallery-filter-btn" data-filter="group-photos">Group Photos</button>
+  <button type="button" class="gallery-filter-btn" data-filter="events">Events</button>
+  <button type="button" class="gallery-filter-btn" data-filter="conference">Conference</button>
+</div>
+
+<div class="gallery-grid" id="gallery-grid">
+  
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="0" data-category="events">
+        <img
+          src="/media/gallery/202604_%eb%8b%ac%ec%b0%bd%ec%a0%80%ec%88%98%ec%a7%80/1.jpg"
+          alt="2026 Cherry Blossom Cafe Tour cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2026 Cherry Blossom Cafe Tour</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2026-04-03</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">2 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="1" data-category="group-photos">
+        <img
+          src="/media/gallery/202603_%eb%b2%9a%ea%bd%83/1.jpg"
+          alt="2026 Cherry Blossom Group Photo cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2026 Cherry Blossom Group Photo</h3>
+          
+            <p class="gallery-card-category">Group Photos</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2026-03-31</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">3 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="2" data-category="events">
+        <img
+          src="/media/gallery/202603_%ec%98%a4%ed%94%88%eb%9e%a9/1.jpg"
+          alt="2026 Spring Open Lab cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2026 Spring Open Lab</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2026-03-28</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">4 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="3" data-category="events">
+        <img
+          src="/media/gallery/202603_%ed%94%bc%ec%9e%90%ed%8c%8c%ed%8b%b0/1.jpg"
+          alt="2026 Before ECCV(2026) Submission cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2026 Before ECCV(2026) Submission</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2026-03-05</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="4" data-category="events">
+        <img
+          src="/media/gallery/202602_%ec%9a%b0%ec%97%b0%eb%8b%b9/1.jpg"
+          alt="2026 Beef Party cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2026 Beef Party</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2026-02-26</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="5" data-category="events">
+        <img
+          src="/media/gallery/202602_%eb%91%90%ec%ab%80%ec%bf%a0/1.jpg"
+          alt="2026 Dubai Cookie Party cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2026 Dubai Cookie Party</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2026-02-10</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">4 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="6" data-category="events">
+        <img
+          src="/media/gallery/202601_cvpr%eb%a6%ac%eb%b7%b0%ed%83%88%ed%9a%8c%ec%8b%9d/1.jpg"
+          alt="2026 Before CVPR(2025) Rebuttal cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2026 Before CVPR(2025) Rebuttal</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2026-01-27</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="7" data-category="group-photos">
+        <img
+          src="/media/gallery/202512_%ec%9a%b0%ec%97%b0%eb%8b%b9%eb%8b%a8%ec%b2%b4/1.jpg"
+          alt="2025 Winter Group Photo cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Winter Group Photo</h3>
+          
+            <p class="gallery-card-category">Group Photos</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-12-18</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="8" data-category="events">
+        <img
+          src="/media/gallery/202511_cvpr%ed%9a%8c%ec%8b%9d/1.jpg"
+          alt="2025 Before CVPR(2025) Submission cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Before CVPR(2025) Submission</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-11-07</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="9" data-category="events">
+        <img
+          src="/media/gallery/202510_happy_hour/1.jpg"
+          alt="2025 Happy Hour cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Happy Hour</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-10-29</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="10" data-category="events">
+        <img
+          src="/media/gallery/202510_10%ec%9b%94%ec%83%9d%ec%9d%bc%ed%8c%8c%ed%8b%b0/1.jpg"
+          alt="2025 October Birthday Party cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 October Birthday Party</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-10-29</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">5 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="11" data-category="events">
+        <img
+          src="/media/gallery/202510_%ec%9a%a9%ec%84%b1%ec%96%91%ea%bc%ac%ec%b9%98/1.jpg"
+          alt="2025 Fall Dinner cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Fall Dinner</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-10-17</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="12" data-category="events">
+        <img
+          src="/media/gallery/202509_%ec%86%8c%ec%86%8c%eb%a3%a8/1.jpg"
+          alt="2025 Chinese Food Party cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Chinese Food Party</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-09-08</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="13" data-category="events">
+        <img
+          src="/media/gallery/202508_%ec%98%a4%ed%94%88%eb%9e%a9/1.jpg"
+          alt="2025 Fall Open Lab cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Fall Open Lab</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-08-30</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">2 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="14" data-category="events">
+        <img
+          src="/media/gallery/202508_%ec%97%b0%ea%b5%ac%ec%8b%a4%ec%9d%b4%ec%82%ac2/1.jpg"
+          alt="2025 Lab Relocation 2 cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Lab Relocation 2</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-08-29</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">5 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="15" data-category="events">
+        <img
+          src="/media/gallery/202508_%ec%9a%a9%ec%84%b1%ec%96%91%ea%bc%ac%ec%b9%98/1.jpg"
+          alt="2025 Lab Relocation Celebration Dinner cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Lab Relocation Celebration Dinner</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-08-25</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="16" data-category="events">
+        <img
+          src="/media/gallery/202508_%ec%97%b0%ea%b5%ac%ec%8b%a4%ec%9d%b4%ec%82%ac1/1.jpg"
+          alt="2025 Lab Relocation 1 cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Lab Relocation 1</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-08-25</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">6 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="17" data-category="events">
+        <img
+          src="/media/gallery/202506_%ea%b1%b0%eb%b6%81%ec%9d%b4%eb%8f%99%eb%84%a4/1.jpg"
+          alt="2025 Lab Dinner cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Lab Dinner</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-06-27</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">1 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="18" data-category="events">
+        <img
+          src="/media/gallery/202505_%ea%b5%90%ec%88%98%eb%8b%98%ec%83%9d%ec%8b%a0/1.jpg"
+          alt="2025 Professor&#39;s Birthday cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Professor&#39;s Birthday</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-05-15</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">4 photos</p>
+        </div>
+      </button>
+    
+      
+      
+      
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+        
+          
+          
+          
+            
+            
+            
+              
+            
+            
+            
+          
+        
+      
+      
+      
+      
+        
+      
+        
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+
+      <button type="button" class="gallery-card" data-album-index="19" data-category="events">
+        <img
+          src="/media/gallery/202504_%ec%98%a4%ed%94%88%eb%9e%a9/1.jpg"
+          alt="2025 Spring Open Lab cover"
+          class="gallery-card-cover"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="gallery-card-overlay">
+          <h3 class="gallery-card-title">2025 Spring Open Lab</h3>
+          
+            <p class="gallery-card-category">Events</p>
+          
+          
+            <div class="gallery-card-badges">
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">2025-04-05</span>
+              
+              
+                <span class="inline-block px-1.5 py-0.5 text-[11px] rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">DGIST</span>
+              
+            </div>
+          
+          <p class="gallery-card-count">2 photos</p>
+        </div>
+      </button>
+    
+  
+</div>
+<p id="gallery-filter-empty" class="gallery-empty hidden">No albums in this category.</p>
+
+<div class="gallery-viewer" id="gallery-viewer" aria-hidden="true">
+  <div class="gallery-viewer-panel" role="dialog" aria-modal="true" aria-label="Gallery Viewer">
+    <div class="gallery-viewer-toolbar">
+      <div class="gallery-viewer-meta">
+        <p class="gallery-viewer-category" id="gallery-viewer-album-category"></p>
+        <p class="gallery-viewer-title" id="gallery-viewer-album-title"></p>
+        <p class="gallery-viewer-date" id="gallery-viewer-album-date"></p>
+      </div>
+      <button type="button" class="gallery-viewer-close" id="gallery-viewer-close" aria-label="Close viewer">&times;</button>
+    </div>
+    <div class="gallery-viewer-body">
+      <button type="button" class="gallery-viewer-nav" id="gallery-viewer-prev" aria-label="Previous image">&lsaquo;</button>
+      <div class="gallery-viewer-image-wrap">
+        <div class="gallery-viewer-image-frame">
+          <span class="gallery-viewer-photo-page" id="gallery-viewer-counter"></span>
+          <img id="gallery-viewer-image" class="gallery-viewer-image" src="" alt="">
+        </div>
+      </div>
+      <button type="button" class="gallery-viewer-nav" id="gallery-viewer-next" aria-label="Next image">&rsaquo;</button>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+    
+  
+    
+    
+  
+  
+
+
+<script>
+(function () {
+  const albums = [{"category":"Events","date":"2026-04-03","images":["/media/gallery/202604_달창저수지/1.jpg","/media/gallery/202604_달창저수지/2.jpg"],"slug":"202604-cherry-blossom-cafe-tour","title":"2026 Cherry Blossom Cafe Tour"},{"category":"Group Photos","date":"2026-03-31","images":["/media/gallery/202603_벚꽃/1.jpg","/media/gallery/202603_벚꽃/2.jpg","/media/gallery/202603_벚꽃/3.jpg"],"slug":"202603-cherry-blossom-group-photo","title":"2026 Cherry Blossom Group Photo"},{"category":"Events","date":"2026-03-28","images":["/media/gallery/202603_오픈랩/1.jpg","/media/gallery/202603_오픈랩/2.jpg","/media/gallery/202603_오픈랩/3.jpg","/media/gallery/202603_오픈랩/4.jpg"],"slug":"202603-spring-openlab","title":"2026 Spring Open Lab"},{"category":"Events","date":"2026-03-05","images":["/media/gallery/202603_피자파티/1.JPG"],"slug":"202603-before-eccv-submission","title":"2026 Before ECCV(2026) Submission"},{"category":"Events","date":"2026-02-26","images":["/media/gallery/202602_우연당/1.jpg"],"slug":"202602-beef-party","title":"2026 Beef Party"},{"category":"Events","date":"2026-02-10","images":["/media/gallery/202602_두쫀쿠/1.jpg","/media/gallery/202602_두쫀쿠/2.jpg","/media/gallery/202602_두쫀쿠/3.jpg","/media/gallery/202602_두쫀쿠/4.jpg"],"slug":"202602-dubai-cookie-party","title":"2026 Dubai Cookie Party"},{"category":"Events","date":"2026-01-27","images":["/media/gallery/202601_cvpr리뷰탈회식/1.jpg"],"slug":"202601-before-cvpr-rebuttal","title":"2026 Before CVPR(2025) Rebuttal"},{"category":"Group Photos","date":"2025-12-18","images":["/media/gallery/202512_우연당단체/1.jpg"],"slug":"202512-winter-group-photo","title":"2025 Winter Group Photo"},{"category":"Events","date":"2025-11-07","images":["/media/gallery/202511_cvpr회식/1.jpg"],"slug":"202511-before-cvpr-submission","title":"2025 Before CVPR(2025) Submission"},{"category":"Events","date":"2025-10-29","images":["/media/gallery/202510_happy_hour/1.jpg"],"slug":"202510-happy-hour","title":"2025 Happy Hour"},{"category":"Events","date":"2025-10-29","images":["/media/gallery/202510_10월생일파티/1.jpg","/media/gallery/202510_10월생일파티/2.jpg","/media/gallery/202510_10월생일파티/3.JPG","/media/gallery/202510_10월생일파티/4.JPG","/media/gallery/202510_10월생일파티/5.jpg"],"slug":"202510-birthday-party","title":"2025 October Birthday Party"},{"category":"Events","date":"2025-10-17","images":["/media/gallery/202510_용성양꼬치/1.jpg"],"slug":"202510-fall-dinner","title":"2025 Fall Dinner"},{"category":"Events","date":"2025-09-08","images":["/media/gallery/202509_소소루/1.jpg"],"slug":"202509-chinese-food-party","title":"2025 Chinese Food Party"},{"category":"Events","date":"2025-08-30","images":["/media/gallery/202508_오픈랩/1.jpg","/media/gallery/202508_오픈랩/2.jpg"],"slug":"202508-fall-openlab","title":"2025 Fall Open Lab"},{"category":"Events","date":"2025-08-29","images":["/media/gallery/202508_연구실이사2/1.jpg","/media/gallery/202508_연구실이사2/2.jpg","/media/gallery/202508_연구실이사2/3.jpg","/media/gallery/202508_연구실이사2/4.jpg","/media/gallery/202508_연구실이사2/5.jpg"],"slug":"202508-second-relocation","title":"2025 Lab Relocation 2"},{"category":"Events","date":"2025-08-25","images":["/media/gallery/202508_용성양꼬치/1.jpg"],"slug":"202604-Lab-Relocation-Celebration-Dinner","title":"2025 Lab Relocation Celebration Dinner"},{"category":"Events","date":"2025-08-25","images":["/media/gallery/202508_연구실이사1/1.JPG","/media/gallery/202508_연구실이사1/2.JPG","/media/gallery/202508_연구실이사1/3.JPG","/media/gallery/202508_연구실이사1/4.jpg","/media/gallery/202508_연구실이사1/5.JPG","/media/gallery/202508_연구실이사1/6.JPG"],"slug":"202508-first-relocation","title":"2025 Lab Relocation 1"},{"category":"Events","date":"2025-06-27","images":["/media/gallery/202506_거북이동네/1.jpg"],"slug":"202506-first-meeting","title":"2025 Lab Dinner"},{"category":"Events","date":"2025-05-15","images":["/media/gallery/202505_교수님생신/1.jpg","/media/gallery/202505_교수님생신/2.jpg","/media/gallery/202505_교수님생신/3.jpg","/media/gallery/202505_교수님생신/4.jpg"],"slug":"202505-professor-birthday","title":"2025 Professor's Birthday"},{"category":"Events","date":"2025-04-05","images":["/media/gallery/202504_오픈랩/1.jpg","/media/gallery/202504_오픈랩/2.jpg"],"slug":"202504-openlab","title":"2025 Spring Open Lab"}];
+  if (!albums.length) return;
+
+  const cards = document.querySelectorAll(".gallery-card[data-album-index]");
+  const filterButtons = document.querySelectorAll(".gallery-filter-btn[data-filter]");
+  const filterEmpty = document.getElementById("gallery-filter-empty");
+  const viewer = document.getElementById("gallery-viewer");
+  const categoryEl = document.getElementById("gallery-viewer-album-category");
+  const titleEl = document.getElementById("gallery-viewer-album-title");
+  const dateEl = document.getElementById("gallery-viewer-album-date");
+  const counterEl = document.getElementById("gallery-viewer-counter");
+  const imageEl = document.getElementById("gallery-viewer-image");
+  const closeBtn = document.getElementById("gallery-viewer-close");
+  const prevBtn = document.getElementById("gallery-viewer-prev");
+  const nextBtn = document.getElementById("gallery-viewer-next");
+
+  if (!viewer || !categoryEl || !titleEl || !dateEl || !counterEl || !imageEl || !closeBtn || !prevBtn || !nextBtn) return;
+
+  let currentAlbum = 0;
+  let currentImage = 0;
+
+  function applyFilter(filterKey) {
+    let visibleCount = 0;
+    cards.forEach((card) => {
+      const cardCategory = (card.getAttribute("data-category") || "").trim().toLowerCase();
+      const isVisible = filterKey === "all" || cardCategory === filterKey;
+      card.style.display = isVisible ? "" : "none";
+      if (isVisible) visibleCount += 1;
+    });
+
+    if (filterEmpty) {
+      if (visibleCount === 0) {
+        filterEmpty.classList.remove("hidden");
+      } else {
+        filterEmpty.classList.add("hidden");
+      }
+    }
+  }
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const key = (this.getAttribute("data-filter") || "all").trim().toLowerCase();
+      filterButtons.forEach((b) => b.classList.remove("is-active"));
+      this.classList.add("is-active");
+      applyFilter(key);
+    });
+  });
+
+  applyFilter("all");
+
+  function renderViewer() {
+    const album = albums[currentAlbum];
+    if (!album || !album.images || !album.images.length) return;
+
+    if (currentImage < 0) currentImage = album.images.length - 1;
+    if (currentImage >= album.images.length) currentImage = 0;
+
+    const src = album.images[currentImage];
+    categoryEl.textContent = album.category || "";
+    titleEl.textContent = album.title || "Gallery";
+    dateEl.textContent = album.date || "";
+    categoryEl.style.display = album.category ? "" : "none";
+    dateEl.style.display = album.date ? "" : "none";
+    counterEl.textContent = (currentImage + 1) + " / " + album.images.length;
+    imageEl.src = src;
+    imageEl.alt = (album.title || "Gallery image") + " " + (currentImage + 1);
+  }
+
+  function openViewer(albumIndex) {
+    currentAlbum = albumIndex;
+    currentImage = 0;
+    renderViewer();
+    viewer.classList.add("is-open");
+    viewer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeViewer() {
+    viewer.classList.remove("is-open");
+    viewer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      const idx = parseInt(this.getAttribute("data-album-index"), 10);
+      if (Number.isNaN(idx)) return;
+      openViewer(idx);
+    });
+  });
+
+  prevBtn.addEventListener("click", function () {
+    currentImage -= 1;
+    renderViewer();
+  });
+
+  nextBtn.addEventListener("click", function () {
+    currentImage += 1;
+    renderViewer();
+  });
+
+  closeBtn.addEventListener("click", closeViewer);
+
+  viewer.addEventListener("click", function (event) {
+    if (event.target === viewer) closeViewer();
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (!viewer.classList.contains("is-open")) return;
+    if (event.key === "Escape") closeViewer();
+    if (event.key === "ArrowLeft") {
+      currentImage -= 1;
+      renderViewer();
+    }
+    if (event.key === "ArrowRight") {
+      currentImage += 1;
+      renderViewer();
+    }
+  });
+})();
+</script>
+
+
+</div>
+</div>
+
+  </section>
+
+  
+
+
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+
+<p class="text-center">
+  
+  <a href="/privacy/">Privacy</a>
+  
+  
+   &middot; 
+  <a href="/terms/">Terms of Service</a>
+  
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by text-center">
+    
+    
+    © 2026 DGIST ISL Lab. All rights reserved.
+  </p>
+  
+
+
+
+
+
+  
+  
+  
+    
+    
+      
+      
+        
+        
+      
+    
+
+    <p class="powered-by text-center text-sm opacity-80 py-1">
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      Made with <a class="underline hover:opacity-100" href="https://hugoblox.com?utm_source=site_footer&utm_medium=referral&utm_campaign=poweredby_oss&utm_content=brand_landing-page" target="_blank" rel="noopener" data-hbx="poweredby_brand">Hugo Blox Builder</a>.
+      <a class="inline-flex items-center rounded px-2 py-0.5 border border-current ms-2 text-xs hover:opacity-100"
+         href="https://hugoblox.com/templates/landing-page/start?utm_source=site_footer&amp;utm_medium=referral&amp;utm_campaign=poweredby_oss&amp;utm_content=cta_landing-page" target="_blank" rel="noopener" data-hbx="poweredby_cta">Build your site →</a>
+    </p>  
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+<div id="hb-notification-container" class="fixed top-20 right-4 z-[9999] pointer-events-none" aria-live="polite" aria-atomic="true"></div>
+
+
+    
+    
+
+
+
+
+
+
+
+
+  
+    
+      
+        
+        <script>
+(function () {
+  const menu = document.getElementById("nav-menu");
+  if (!menu) return;
+
+  const links = Array.from(menu.querySelectorAll("a.nav-link"));
+  if (!links.length) return;
+
+  const indicator = document.createElement("span");
+  indicator.className = "nav-underline-indicator";
+  menu.appendChild(indicator);
+
+  const normalize = (p) => (p || "/").replace(/\/+$/, "") || "/";
+  const currentPath = normalize(window.location.pathname);
+
+  let current =
+    menu.querySelector("a.nav-link.active") ||
+    links.find((a) => normalize(new URL(a.href, window.location.origin).pathname) === currentPath) ||
+    links[0];
+
+  function moveTo(el) {
+    if (!el) return;
+    const menuRect = menu.getBoundingClientRect();
+    const linkRect = el.getBoundingClientRect();
+    indicator.style.width = linkRect.width + "px";
+    indicator.style.transform = "translateX(" + (linkRect.left - menuRect.left) + "px)";
+  }
+
+  moveTo(current);
+
+  links.forEach((link) => {
+    link.addEventListener("mouseenter", () => moveTo(link));
+    link.addEventListener("focus", () => moveTo(link));
+    link.addEventListener("click", () => {
+      current = link;
+    });
+  });
+
+  menu.addEventListener("mouseleave", () => moveTo(current));
+  window.addEventListener("resize", () => moveTo(current));
+})();
+</script>
+
+        
+      
+    
+  
+
+
+
+
+
+    
+    
+  </body>
+</html>
