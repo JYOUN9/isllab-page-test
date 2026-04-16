@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home | </title>
-    <link>http://localhost:1313/</link>
-      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://JYOUN9.github.io/isllab-page-test/</link>
+      <atom:link href="https://JYOUN9.github.io/isllab-page-test/index.xml" rel="self" type="application/rss+xml" />
     <description>Home</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/logo_hu_79f3ecb4fd6143a8.png</url>
+      <url>https://JYOUN9.github.io/isllab-page-test/media/logo_hu_79f3ecb4fd6143a8.png</url>
       <title>Home</title>
-      <link>http://localhost:1313/</link>
+      <link>https://JYOUN9.github.io/isllab-page-test/</link>
     </image>
     
     <item>
       <title>Privacy</title>
-      <link>http://localhost:1313/privacy/</link>
+      <link>https://JYOUN9.github.io/isllab-page-test/privacy/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy/</guid>
+      <guid>https://JYOUN9.github.io/isllab-page-test/privacy/</guid>
       <description>&lt;p&gt;Add your company privacy policy here&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Terms of Service</title>
-      <link>http://localhost:1313/terms/</link>
+      <link>https://JYOUN9.github.io/isllab-page-test/terms/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/terms/</guid>
+      <guid>https://JYOUN9.github.io/isllab-page-test/terms/</guid>
       <description>&lt;p&gt;Add your company legal terms here&amp;hellip;&lt;/p&gt;
 </description>
     </item>
@@ -326,7 +326,7 @@
 
 
 
-&lt;div id=&#34;chart-281679534&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-372985164&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -344,7 +344,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-281679534&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-372985164&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -568,7 +568,7 @@ Crash --&gt; [*]
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:1313/blog/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://JYOUN9.github.io/isllab-page-test/blog/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
