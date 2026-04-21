@@ -1,0 +1,18 @@
+schema: hugoblox/author/v1
+slug: donghyeonsoon
+category: Interns
+order: 4
+name:
+  display: Donghyeon Soon
+  given: Donghyeon
+  family: Soon
+role: Intern
+bio: B.S., DGIST
+tags:
+  - Multimodal A.I.
+  - Physical A.I.
+links:
+  - icon: at-symbol
+    url: mailto:dhsoon@dgist.ac.kr
+    label: Email
+

@@ -1,0 +1,18 @@
+schema: hugoblox/author/v1
+slug: seonaejeon
+category: Interns
+order: 1
+name:
+  display: Seonae Jeon
+  given: Seonae
+  family: Jeon
+role: Intern
+bio: B.S., DGIST
+tags:
+  - Multimodal A.I.
+  - Physical A.I.
+links:
+  - icon: at-symbol
+    url: mailto:seonae@dgist.ac.kr
+    label: Email
+

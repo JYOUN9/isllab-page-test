@@ -1,0 +1,18 @@
+schema: hugoblox/author/v1
+slug: joohyunoh
+category: Interns
+order: 8
+name:
+  display: Joo Hyun Oh
+  given: Joo Hyun
+  family: Oh
+role: Intern
+bio: B.S., DGIST
+tags:
+  - Multimodal A.I.
+  - Physical A.I.
+links:
+  - icon: at-symbol
+    url: mailto:dhwngus41@dgist.ac.kr
+    label: Email
+

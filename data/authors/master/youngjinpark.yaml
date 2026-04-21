@@ -1,0 +1,37 @@
+schema: hugoblox/author/v1
+slug: youngjinpark
+is_owner: true
+category: Master Students
+order: 3
+name:
+  display: Youngjin Park
+  given: Youngjin
+  family: Park
+  pronunciation: youngjin park
+  pronouns: he/him
+status:
+  icon: "☕️"
+role: M.S. Student
+bio: 
+tags:
+  - Multimodal A.I.
+  - Physical A.I.
+affiliations:
+  - name: DGIST
+    url: https://www.dgist.ac.kr/en_eecs/index.do
+links:
+  - icon: at-symbol
+    url: mailto:yj100520@dgist.ac.kr
+    label: E-mail Me
+  - icon: homepage
+    url: 
+    label: Homepage
+  - icon: brands/github
+    url: 
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/youngjin-park-47490120b/
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: 
+    label: Google Scholar

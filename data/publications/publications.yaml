@@ -1,0 +1,367 @@
+# Optional link fields per publication:
+# links:
+#   paper: https://...
+#   supp: https://...
+#   page: https://...
+#   code: https://github.com/...
+#   link: https://...
+
+- slug: BitTP-2026
+  title: "CascadeOcc: Rethinking 3D Occupancy World Models with Cascaded VQ Representations"
+  authors:
+    - Kyumin Hwang*
+    - Wonhyeok Choi*
+    - Jaeyeul Kim
+    - Jihun Park
+    - Daehee Park†
+    - Sunghoon Im†
+  venue: IEEE Signal Processing Letters
+  category: journal
+  date: 2026-01-26
+  method: World Model
+  domain: Autonomous Driving
+  task: 4D Occupancy Forecasting
+  links: 
+
+- slug: BitTP-2026
+  title: "BitTP: The Lightweight Trajectory Prediction Model with BitLLM for Edge-Devices"
+  authors:
+    - Mincheol Kang*
+    - Hyunjin Lim*
+    - Bomin Kang*
+    - Daehee Park†
+  venue: CVPR Findings
+  category: conference
+  date: 2026-06-05
+  method: On-Device A.I.
+  domain: Autonomous Driving
+  task: LLM Quantization
+  links: 
+
+- slug: EggHand-2026
+  title: "EggHand: A Multimodal Foundation Model for Egocentric Hand Pose Forecasting"
+  authors:
+    - Jaeyoung Choi*
+    - Hyeondong Kim*
+    - Yujin Kim
+    - Daehee Park†
+  venue: CVPR Findings
+  category: conference
+  date: 2026-06-05
+  method: Knowledge Integration
+  domain: Human Motion Modeling
+  task: Hand Pose Forecasting
+  links: 
+
+- slug: Diffusion-Model-2025
+  title: "Generative Active Learning for Long-tail Trajectory Prediction via Controllable Diffusion Model"
+  authors:
+    - Daehee Park
+    - Monu Surana
+    - Pranav Desai
+    - Ashish Mehta
+    - Reuben MV John
+    - Kuk-Jin Yoon† (Collaboration with Qualcomm, US)
+  venue: ICCV
+  category: conference
+  date: 2025-10-19
+  method: Self-Evolving A.I.
+  domain: Autonomous Driving
+  task: Trajectory Prediction
+  links: 
+    paper: https://openaccess.thecvf.com/content/ICCV2025/papers/Park_Generative_Active_Learning_for_Long-tail_Trajectory_Prediction_via_Controllable_Diffusion_ICCV_2025_paper.pdf
+    supp: https://openaccess.thecvf.com/content/ICCV2025/supplemental/Park_Generative_Active_Learning_ICCV_2025_supplemental.pdf
+
+- slug: Interaction-Merged-2025
+  title: "Interaction-Merged Motion Planning: Effectively Leveraging Diverse Motion Datasets for Robust Planning"
+  authors:
+    - Giwon Lee
+    - Wooseong Jeong
+    - Daehee Park
+    - Jaewoo Jeong
+    - Kuk-Jin Yoon†
+  venue: ICCV Highlight✨ (Top 2.3% of all papers)
+  category: conference
+  date: 2025-10-19
+  method: Knowledge Integration
+  domain: Autonomous Driving
+  task: Motion Planning
+  links: 
+    paper: https://openaccess.thecvf.com/content/ICCV2025/papers/Lee_Interaction-Merged_Motion_Planning_Effectively_Leveraging_Diverse_Motion_Datasets_for_Robust_ICCV_2025_paper.pdf
+    supp: https://openaccess.thecvf.com/content/ICCV2025/supplemental/Lee_Interaction-Merged_Motion_Planning_ICCV_2025_supplemental.pdf
+    code: https://github.com/wooseong97/IMMP
+
+- slug: Motion-Planning-2025
+  title: "Non-differentiable Reward Optimization for Diffusion-based Autonomous Motion Planning"
+  authors:
+    - Giwon Lee*
+    - Daehee Park*
+    - Jaewoo Jeong*
+    - Kuk-Jin Yoon†
+  venue: IROS
+  category: conference
+  date: 2025-08-19
+  method: Self-Evolving A.I.
+  domain: Robotic A.I.
+  task: Motion Planning
+  links: 
+    paper: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11247412
+
+- slug: Knowledge-Distillation-2025
+  title: "Multi-modal Knowledge Distillation-based Human Trajectory Forecasting"
+  authors:
+    - Jaewoo Jeong
+    - SeoHee Lee
+    - Daehee Park
+    - Giwon Lee
+    - Kuk-Jin Yoon†
+  venue: CVPR
+  category: conference
+  date: 2025-06-13
+  method: Knowledge Integration
+  domain: Human Motion Modeling
+  task: Human Trajectory Forecasting
+  links: 
+    paper: https://openaccess.thecvf.com/content/CVPR2025/papers/Jeong_Multi-modal_Knowledge_Distillation-based_Human_Trajectory_Forecasting_CVPR_2025_paper.pdf
+    supp: https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jeong_Multi-modal_Knowledge_Distillation-based_CVPR_2025_supplemental.pdf
+    code: https://github.com/Jaewoo97/KDTF
+
+- slug: 3D-Occupancy-2024
+  title: "Self-Supervised 3D Occupancy Prediction with Temporal Consistency"
+  authors:
+    - Jae-Seok Jeong
+    - Sung-Hoon Yoon
+    - Daehee Park
+    - Kuk-Jin Yoon†
+  venue: ArXiv
+  category: preprint
+  date: 2024-10-01
+  method: 
+  domain: 
+  task: 
+  links: 
+
+
+- slug: Semantic-Segmentation-2024
+  title: "Diffusion-Guided Weakly Supervised Semantic Segmentation"
+  authors:
+    - Sung-Hoon Yoon
+    - Hoyong Kwon*
+    - Jaeseok Jeong*
+    - Daehee Park
+    - Kuk-Jin Yoon†
+  venue: ECCV
+  category: conference
+  date: 2024-10-01
+  method: 
+  domain: Computer Vision
+  task: Semantic Segmentation
+  links: 
+    paper: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06482.pdf
+    supp: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06482-supp.pdf
+    code: https://github.com/yoon307/DiG
+
+- slug: T4P-2024
+  title: "T4P: Test-Time Training of Trajectory Prediction via Masked Autoencoder and Actor-specific Token Memory"
+  authors:
+    - Daehee Park
+    - Jae-Seok Jeong
+    - Sung-Hoon Yoon
+    - Jaewoo Jeong
+    - Kuk-Jin Yoon†
+  venue: CVPR
+  category: conference
+  date: 2024-06-17
+  method: Self-Evolving A.I.
+  domain: Autonomous Driving
+  task: Trajectory Prediction
+  links: 
+    paper: https://openaccess.thecvf.com/content/CVPR2024/papers/Park_T4P_Test-Time_Training_of_Trajectory_Prediction_via_Masked_Autoencoder_and_CVPR_2024_paper.pdf
+    supp: https://openaccess.thecvf.com/content/CVPR2024/supplemental/Park_T4P_Test-Time_Training_CVPR_2024_supplemental.pdf
+    code: https://github.com/daeheepark/T4P
+
+- slug: Multi-agent-2024
+  title: "Multi-agent Long-term 3D Human Pose Forecasting via Interaction-aware Trajectory Conditioning"
+  authors:
+    - Jaewoo Jeong*
+    - Daehee Park*
+    - Kuk-Jin Yoon†
+  venue: CVPR Highlight✨ (Top 2.81% of all papers)
+  category: conference
+  date: 2024-06-17
+  method: 
+  domain: Human Motion Modeling
+  task: Multi-Agent Human Pose Forecasting
+  links: 
+    paper: https://openaccess.thecvf.com/content/CVPR2024/papers/Jeong_Multi-agent_Long-term_3D_Human_Pose_Forecasting_via_Interaction-aware_Trajectory_Conditioning_CVPR_2024_paper.pdf
+    supp: https://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Multi-agent_Long-term_3D_Human_Pose_Forecasting_via_Interaction-aware_Trajectory_Conditioning_CVPR_2024_paper.html
+    page: https://jaewoo97.github.io/t2p_/
+    code: https://github.com/jaewoo97/t2p
+
+- slug: Cross-domain-Trajectory-Prediction-2024
+  title: "Improving Transferability for Cross-domain Trajectory Prediction via Neural Stochastic Differential Equation"
+  authors:
+    - Daehee Park
+    - Jaewoo Jeong
+    - Kuk-Jin Yoon†
+  venue: AAAI
+  category: conference
+  date: 2024-03-25
+  method: 
+  domain: Autonomous Driving
+  task: Trajectory Prediction
+  links: 
+    paper: https://ojs.aaai.org/index.php/AAAI/article/view/28879
+    code: https://github.com/daeheepark/TrajSDE
+    link: https://underline.io/lecture/92098-improving-transferability-for-cross-domain-trajectory-prediction-via-neural-stochastic-differential-equation
+
+- slug: Trajectory-Prediction-2023
+  title: "Leveraging Future Relationship Reasoning for Vehicle Trajectory Prediction"
+  authors:
+    - Daehee Park
+    - Hobin Ryu
+    - Yunseo Yang
+    - Jegyeong Cho
+    - Jiwon Kim
+    - Kuk-Jin Yoon† (Collaboration with Naver Labs)
+  venue: ICLR (1st rank in nuScenes prediction challenge)
+  category: conference
+  date: 2023-03-03
+  method: 
+  domain: Autonomous Driving
+  task: Trajectory Prediction
+  links: 
+    paper: https://openreview.net/references/pdf?id=VEgFwcuigY
+
+- slug: BIPS-2022
+  title: "BIPS: Bi-modal Indoor Panorama Synthesis via Residual Depth-Aided Adversarial Learning"
+  authors:
+    - Changgyoon Oh*
+    - Wonjune Cho*
+    - Yujeong Chae*
+    - Daehee Park*
+    - Lin Wang
+    - Kuk-Jin Yoon†
+  venue: ECCV
+  category: conference
+  date: 2022-10-25
+  method: 
+  domain: Computer Vision
+  task: Bi-modal Indoor Panorama Synthesis
+  links: 
+    paper: https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136760331.pdf
+    supp: https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136760331-supp.pdf
+    code: https://github.com/chang9711/BIPS
+
+- slug: Ordinary-Classifier-2021
+  title: "Unlocking the Potential of Ordinary Classifier: Class-specific Adversarial Erasing Framework for Weakly Supervised Semantic Segmentation"
+  authors:
+    - Hyeokjun Kweon*
+    - Sung-Hoon Yoon*
+    - Hyeonseong Kim
+    - Daehee Park
+    - Kuk-Jin Yoon†
+  venue: ICCV
+  category: conference
+  date: 2021-08-17
+  method: 
+  domain: Robotic A.I.
+  task: Semantic Segmentation
+  links: 
+    paper: https://ieeexplore.ieee.org/document/9310333
+    supp: https://openaccess.thecvf.com/content/ICCV2021/supplemental/Kweon_Unlocking_the_Potential_ICCV_2021_supplemental.pdf
+    code: https://github.com/KAIST-vilab/OC-CSE
+
+- slug: Object-Detector-2020
+  title: "Identifying Reflected Images from Object Detector in Indoor Environment Utilizing Depth Information"
+  authors:
+    - Daehee Park
+    - Yong-Hwa Park†
+  venue: RA-L & ICRA
+  category: conference
+  date: 2020-12-29
+  method: 
+  domain: Robotic A.I.
+  task: Semantic Segmentation
+  links: 
+    paper: https://openaccess.thecvf.com/content/ICCV2021/papers/Kweon_Unlocking_the_Potential_of_Ordinary_Classifier_Class-Specific_Adversarial_Erasing_Framework_ICCV_2021_paper.pdf
+
+- slug: 3D-Sensor-2019
+  title: "A Scanning 3D Sensor and Its Object Recognition for Autonomous Robots"
+  authors:
+    - Joon-Oh Shin
+    - In-Gyu Jang
+    - Daehee Park 
+    - Yong-Hwa Park†
+  venue: SPIE MOEMS and Miniaturized Systems XVIII
+  category: conference
+  date: 2019-03-04
+  method: 
+  domain: Autonomous Driving
+  task: 3D object recognition
+  links: 
+    paper: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10931/109310H/A-scanning-3D-sensor-and-its-object-recognition-for-autonomous/10.1117/12.2513797.full
+
+- slug: Dual-sampling-2023
+  title: "Dual-sampling Strategy for Vehicle Trajectory Prediction with Future Relation Inference"
+  authors:
+    - Daehee Park
+    - Yunseo Yang
+    - Jegyeong Cho
+    - Kukjin Yoon†
+  venue: 제35회 영상 처리 및 이해에 관한 워크샵(IPIU)
+  category: domestic
+  date: 2023-02-12
+  method: 
+  domain: 
+  task: 
+  links: 
+
+
+- slug: BIPS-2022
+  title: "BIPS: Bi-modal Indoor Panorama Synthesis via Residual Depth-aided Adversarial Learning"
+  authors:
+    - Changgyoon Oh
+    - Wonjune Cho
+    - Daehee Park
+    - Yujeong Chae
+    - Lin Wang
+    - Kuk-Jin Yoon†
+  venue: 제 34회 영상처리 및 이해에 관한 워크샵(IPIU)
+  category: domestic
+  date: 2022-12-12
+  method: 
+  domain: Computer Vision
+  task: Bi-modal Indoor Panorama Synthesis
+  links: 
+    paper: https://arxiv.org/pdf/2112.06179
+
+
+- slug: 거울-반사-2020
+  title: "실내환경에서 거울 반사에 의한 인체 인식 오류의 제거 방법"
+  authors:
+    - Daehee Park
+    - YYong-Hwa Park†
+  venue: 제15회 한국로봇종합학술대회(KRoC)
+  category: domestic
+  date: 2020-08-07
+  method: 
+  domain: Computer Vision
+  task: 3D Human Perception
+  links: 
+
+
+- slug: False-image-identification-2020
+  title: "Electronic device and method of identifying false image of object attributable to reflection in indoor environment thereof"
+  authors:
+    - Yong-Hwa Park
+    - Daehee Park
+    - Simeneh Semegne Gulelat
+  venue: International Registration
+  category: patent
+  date: 2020-01-14
+  method: False Image Identification
+  domain: (등록) US no.11282178
+  task: 
+  links: 
+    link: https://patents.google.com/patent/US11282178B2/en

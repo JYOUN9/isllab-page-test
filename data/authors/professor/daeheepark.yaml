@@ -1,0 +1,37 @@
+schema: hugoblox/author/v1
+slug: daeheepark
+is_owner: true
+category: PI
+order: 1
+name:
+  display: Daehee Park
+  given: Daehee
+  family: Park
+  pronunciation: daehee park
+  pronouns: he/him
+status:
+  icon: "☕️"
+role: Assistant Professor
+bio: 
+tags:
+  - Multimodal A.I.
+  - Physical A.I.
+affiliations:
+  - name: DGIST
+    url: https://www.dgist.ac.kr/en_eecs/index.do
+links:
+  - icon: at-symbol
+    url: mailto:dhpark@dgist.ac.kr
+    label: E-mail Me
+  - icon: homepage
+    url: https://sites.google.com/view/dhpark/
+    label: Homepage
+  - icon: brands/github
+    url: https://github.com/daeheepark
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/daehee-park-533a701a4/
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=dGMozakAAAAJ
+    label: Google Scholar

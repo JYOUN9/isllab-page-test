@@ -1,0 +1,15 @@
+slug: robotics-ai
+title: Robotics A.I.
+category: Physical A.I.
+pair_gap: 24
+pair_side_padding: 0
+image: 
+  - robotics-ai1.gif
+  - robotics-ai2.gif
+captions:
+  - AgileX
+  - Arx-X5
+description: Advancing the frontier of Embodied AI by integrating multimodal perception with real-world robotic control to automate complex physical tasks.
+#url: https://example.com/quantum-ml
+order: 2
+

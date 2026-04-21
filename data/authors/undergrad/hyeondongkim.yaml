@@ -1,0 +1,20 @@
+schema: hugoblox/author/v1
+slug: hyeondongkim
+category: Interns
+order: 3
+name:
+  display: Hyeondong Kim
+  given: Hyeondong
+  family: Kim
+role: Intern
+bio: B.S., DGIST
+tags:
+  - Multimodal A.I.
+  - Physical A.I.
+links:
+  - icon: at-symbol
+    url: mailto:hdkim@dgist.ac.kr
+    label: Email
+  - icon: homepage
+    url: https://hyun-east.github.io/
+    label: Homepage

@@ -1,0 +1,15 @@
+slug: human-motion-modeling
+title: Human Motion Modeling
+category: Physical A.I.
+pair_gap: 70
+pair_side_padding: 0
+description: Research on modeling and generating human motion using generative AI techniques.
+image: 
+  - human-motion-modeling1.gif
+  - human-motion-modeling2.gif
+captions:
+  - 3D Hand Pose Sample
+  - 2D Hand Pose Sample
+#url: https://example.com/quantum-ml
+order: 6
+

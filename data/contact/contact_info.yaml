@@ -1,0 +1,39 @@
+items:
+  - name: Phone
+    title_icon: /media/icon/phone.svg
+    value: |-
+      Professor: 053-785-6341
+
+  - name: Email
+    title_icon: /media/icon/mail.svg
+    value: |-
+      Professor: dhpark@dgist.ac.kr
+      Lab: isllab@dgist.ac.kr
+      Lab Head: taewonseo@dgist.ac.kr
+
+  - name: Address
+    title_icon: /media/icon/address.svg
+    value: |-
+      DGIST: DGIST, 333 Techno Jungang-daero, Hyeonpung-eup, Dalseong-gun, Daegu, Republic of Korea
+      Prof. Office: DGIST E3 - 216
+      Lab Office: DGIST E3 - 206 / E3 - 516
+
+  - name: Links
+    title_icon: /media/icon/link.svg
+    links:
+      - label: Homepage
+        url: https://isllab.co.kr
+        icon: /media/icon/homepage2.svg
+      - label: Prof. Page
+        url: https://sites.google.com/view/dhpark/
+        icon: /media/icon/prof-page.svg
+      - label: Github
+        url: https://github.com/isldgist
+        icon: /media/icon/github.svg
+      - label: YouTube
+        url: https://www.youtube.com/@ISLLabDGIST
+        icon: /media/icon/youtube.svg
+      - label: Apply
+        url: https://forms.gle/EZTdExuBqut9GR817
+        icon: /media/icon/form.svg
+

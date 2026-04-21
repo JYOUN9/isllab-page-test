@@ -1,0 +1,143 @@
+<script>
+(function () {
+  function initPeopleHoverImages() {
+    document.querySelectorAll("img[data-hover-src]").forEach(function (img) {
+      if (img.dataset.hoverBound === "true") return;
+
+      const hoverSrc = (img.getAttribute("data-hover-src") || "").trim();
+      if (!hoverSrc) return;
+      const baseSrc = (img.getAttribute("src") || "").trim();
+      if (!baseSrc) return;
+
+      img.dataset.hoverBound = "true";
+      const frame = img.closest(".people-photo-frame") || img.parentElement;
+      if (!frame) return;
+
+      frame.style.position = "relative";
+      frame.style.overflow = "hidden";
+
+      function makeImageOverlay(src, zIndex, clipPath, transition) {
+        const layer = document.createElement("img");
+        layer.src = src;
+        layer.alt = img.alt || "";
+        layer.className = "";
+        layer.loading = "eager";
+        layer.decoding = "async";
+        layer.setAttribute("aria-hidden", "true");
+        layer.style.position = "absolute";
+        layer.style.inset = "0";
+        layer.style.width = "100%";
+        layer.style.height = "100%";
+        layer.style.objectFit = "cover";
+        layer.style.objectPosition = "center top";
+        layer.style.imageRendering = "auto";
+        layer.style.opacity = "0";
+        layer.style.clipPath = clipPath;
+        layer.style.webkitClipPath = clipPath;
+        layer.style.transition = transition;
+        layer.style.pointerEvents = "none";
+        layer.style.borderRadius = "inherit";
+        layer.style.zIndex = zIndex;
+        return layer;
+      }
+
+      function makeBaseCornerMask(zIndex, clipPath, transition) {
+        const mask = document.createElement("div");
+        mask.setAttribute("aria-hidden", "true");
+        mask.style.position = "absolute";
+        mask.style.inset = "0";
+        mask.style.backgroundImage = "url('" + baseSrc.replace(/'/g, "\\'") + "')";
+        mask.style.backgroundSize = "cover";
+        mask.style.backgroundPosition = "center top";
+        mask.style.backgroundRepeat = "no-repeat";
+        mask.style.opacity = "0";
+        mask.style.clipPath = clipPath;
+        mask.style.webkitClipPath = clipPath;
+        mask.style.transition = transition;
+        mask.style.pointerEvents = "none";
+        mask.style.borderRadius = "inherit";
+        mask.style.zIndex = zIndex;
+        return mask;
+      }
+
+      /* Main hover image: show as-is without geometric clipping. */
+      const hoverMain = makeImageOverlay(
+        hoverSrc,
+        "1",
+        "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+        "opacity 420ms ease"
+      );
+
+      /* Keep top-left and bottom-left corners on base image a bit longer. */
+      const hoverTopLeft = makeBaseCornerMask(
+        "2",
+        "polygon(0 0, 18% 0, 0 18%)",
+        "opacity 360ms ease 140ms"
+      );
+      const hoverBottomLeft = makeBaseCornerMask(
+        "2",
+        "polygon(0 100%, 18% 100%, 0 82%)",
+        "opacity 360ms ease 140ms"
+      );
+
+      let hoverReady = false;
+      const preloader = new Image();
+      preloader.onload = function () {
+        hoverReady = true;
+      };
+      preloader.onerror = function () {
+        hoverReady = false;
+      };
+      preloader.src = hoverSrc;
+
+      frame.appendChild(hoverMain);
+      frame.appendChild(hoverTopLeft);
+      frame.appendChild(hoverBottomLeft);
+
+      function showHover() {
+        if (!hoverReady) return;
+        const isDarkMode =
+          document.documentElement.classList.contains("dark") ||
+          document.body.classList.contains("dark");
+
+        hoverMain.style.transitionDelay = "0ms";
+        hoverMain.style.opacity = "1";
+
+        if (isDarkMode) {
+          hoverTopLeft.style.opacity = "0";
+          hoverBottomLeft.style.opacity = "0";
+          return;
+        }
+
+        [hoverTopLeft, hoverBottomLeft].forEach(function (corner) {
+          corner.style.transition = "none";
+          corner.style.opacity = "1";
+          void corner.offsetWidth;
+          corner.style.transition = "opacity 360ms ease 140ms";
+          corner.style.opacity = "0";
+        });
+      }
+
+      function showBase() {
+        hoverMain.style.transitionDelay = "0ms";
+        hoverTopLeft.style.transitionDelay = "0ms";
+        hoverBottomLeft.style.transitionDelay = "0ms";
+        hoverMain.style.opacity = "0";
+        hoverTopLeft.style.opacity = "0";
+        hoverBottomLeft.style.opacity = "0";
+      }
+
+      frame.addEventListener("mouseenter", showHover);
+      frame.addEventListener("mouseleave", showBase);
+      frame.addEventListener("focusin", showHover);
+      frame.addEventListener("focusout", showBase);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPeopleHoverImages);
+  } else {
+    initPeopleHoverImages();
+  }
+})();
+</script>

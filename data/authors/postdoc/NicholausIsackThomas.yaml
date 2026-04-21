@@ -1,0 +1,31 @@
+schema: hugoblox/author/v1
+slug: NicholausIsackThomas
+is_owner: true
+category: Postdoc
+order: 1
+name:
+  display: Nicholaus Isack Thomas
+  given: Nicholaus Isack
+  family: Thomas
+  pronunciation: nicholaus isack thomas
+  pronouns: he/him
+status:
+  icon: "☕️"
+role: Postdoctoral Researcher
+bio: 
+tags:
+  - Multimodal A.I.
+  - Physical A.I.
+affiliations:
+  - name: DGIST
+    url: https://www.dgist.ac.kr/en_eecs/index.do
+links:
+  - icon: at-symbol
+    url: mailto:inicholaus@dgist.ac.kr
+    label: E-mail Me
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/dr-nicholaus-isack-thomas-770815111/
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=oVahVXUAAAAJ&hl=en
+    label: Google Scholar

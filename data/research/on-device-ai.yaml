@@ -1,0 +1,11 @@
+slug: on-device-ai
+title: On-Device AI
+category: Intelligent Systems
+pair_gap: 24
+pair_side_padding: 0
+description: We study how to adapt and fine-tune foundation models for domain-specific tasks, with a focus on efficient and robust transfer to areas such as medicine and robotics.
+image: on-device-ai.gif
+captions:
+#url: https://example.com/quantum-ml
+order: 7
+

@@ -1,0 +1,15 @@
+slug: world-model
+title: World Model
+category: Intelligent Systems
+pair_gap: 52
+pair_side_padding: 0
+description: Research on developing AI systems that can represent and reason about the world in a structured way.
+image: 
+  - world-model1.gif
+  - world-model2.gif
+captions:
+  - World Model Sample 1
+  - World Model Sample 2
+#url: https://example.com/quantum-ml
+order: 5
+

@@ -1,0 +1,17 @@
+schema: hugoblox/author/v1
+slug: minguekim
+category: Interns
+order: 7
+name:
+  display: Mingue Kim
+  given: Mingue
+  family: Kim
+role: Intern
+bio: B.S., DGIST
+tags:
+  - Multimodal A.I.
+  - Physical A.I.
+links:
+  - icon: at-symbol
+    url: kimmingue@dgist.ac.kr
+    label: Email

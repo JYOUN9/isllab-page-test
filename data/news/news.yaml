@@ -1,0 +1,130 @@
+
+- date: 2026-02-23
+  type: publication
+  title: "Two papers accepted at 2026 CVPR Findings Track"
+  description: |-
+    We have two paper accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings Track(CVPRF) 2026.
+    <br>(1) The paper is “EggHand: A Multimodal Foundation Model for Egocentric Hand Pose Forecasting” by Jaeyoung Choi*, Hyeondong Kim*, Yujin Kim and Daehee Park
+    (2) The paper is “BitTP: The Lightweight Trajectory Prediction Model with BitLLM for Edge-Devices” by Mincheol Kang*, Hyunjin Lim*, Bomin Kang* and Daehee Park
+  image: "media/news/cvpr_2026.png"
+
+- date: 2026-03
+  type: Project
+  title: "Received a 4-year research grant from the Ministry of Science and ICT (NRF 우수신진B)"
+  description: |-
+    Project title: 자기 진화형 Physical LLM: 불확실한 환경에서 행동 파운데이션 모델의 강건하고 효율적인 적응 기술 연구
+    News: [Link](https://www.ibric.org/bric/trend/bio-news.do?mode=view&articleNo=10024227&srCategoryId=581&article.offset=0&articleLimit=15#!/list)
+  image: "media/news/MSIT.png"
+
+- date: 2026-02
+  type: Events
+  title: "Six Master's Students Joined the ISL Lab 🎓️"
+  description: |-
+    Six new master’s students have joined the lab. Hyungchul Shin joins from the Department of Electrical Engineering and Computer Science (EECS), and Youngjin Park, Hyunjin Lim, Sihyeong Lee, Hyeonwoo Park, Donggyu Lee from the Department of Artificial Intelligence (AI).
+  image: "media/news/logo_news.png"
+
+- date: 2025-12
+  type: Project
+  title: "Received an NVIDIA Academic Grant Program award"
+  description: |-
+    Project title: Extending Action Foundation Models to Dynamic Human-Robot Collaboration, for inclusion in our Academic Grant Program
+  image: "media/news/nvidia.png"
+
+- date: 2025-08
+  type: Project
+  title: "Received a 1-year research grant from the Ministry of Science and ICT (우수신진 씨앗 연구)"
+  description: |-
+    Project title: 행동  파운데이션  모델의  동적  환경으로  확장을  통한 안전하고  범용적인  인간-로봇  협동  연구
+    News: [Link](https://www.enewstoday.co.kr/news/articleView.html?idxno=2320868)
+  image: "media/news/MSIT.png"
+
+- date: 2025-08
+  type: Events
+  title: "Two Master's Students Joined the ISL Lab 🎓️"
+  description: |-
+    Two new master’s students have joined the lab. Jaeyoung Choi joins from the Department of Electrical Engineering and Computer Science (EECS), and Taewon Seo from the Department of Artificial Intelligence (AI).
+  image: "media/news/logo_news.png"
+
+- date: 2025-07
+  type: Project
+  title: " Received a 3-year research grant from the Ministry of Science and ICT (생성 인공 지능(AI) 선도인재양성)"
+  description: |-
+    Project title: Physical AI 분야의 거대 생성모델 기술 선도를 위한 LG AI STAR 인재양성 사업
+    News: [Link](https://www.ktenews.co.kr/bbs/board.php?bo_table=weekly_news&wr_id=6254)
+  image: "media/news/MSIT.png"
+
+- date: 2025-07
+  type: Events
+  title: "Prof. Park gave an invited talk at the 2025 Joint Summer School of the Visual Understanding and Image Processing Societies"
+  description: |-
+    News: [Link](https://www.theieie.org/events/?part=03&c_id=949)
+  image: "media/news/대한전자공학회.png"
+
+- date: 2025-06
+  type: publication
+  title: "Two papers accepted at ICCV 2025 (one selected as a highlight)"
+  description: |-
+    We have two papers accepted at International Conference on Computer Vision (ICCV) 2025.
+    <br>(1) The paper is “Generative Active Learning for Long-tail Trajectory Prediction via Controllable Diffusion Model” by Daehee Park, Monu Surana, Pranav Desai, Ashish Mehta, Reuben MV John, Kuk-Jin Yoon ,
+    (2) The paper is "Interaction-Merged Motion Planning: Effectively Leveraging Diverse Motion Datasets for Robust Planning" by Giwon Lee*, Wooseong Jeong*, Daehee Park, Jaewoo Jeong, Kuk-Jin Yoon (*: equal contribution).
+  image: "media/news/ICCV_2025.png"
+
+- date: 2025-06
+  type: publication
+  title: "One paper accepted at IROS 2025"
+  description: |-
+    We have one paper accepted at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025.
+    <br>The paper is “Non-differentiable Reward Optimization for Diffusion-based Autonomous Motion Planning ” by Giwon Lee*, Daehee Park*, Jaewoo Jeong*, Kuk-Jin Yoon (*: equal contribution)
+  image: "media/news/IROS_2025.png"
+
+- date: 2025-06
+  type: Project
+  title: "Received two 5-year research grants from the Ministry of Science and ICT (InnoCORE 연구단)"
+  description: |-
+    Project 1 title: 바이오 체화형 피지컬 AI 연구단
+    Project 2 title: 초거대언어모델 혁신 연구단: LLM 기술 고도화 및 생성AI·멀티모달·신뢰성 확보 연구
+    News: [Link1](https://www.ksmnews.co.kr/news/view.php?idx=546299), [Link2](https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=47910)
+  image: "media/news/MSIT.png"
+
+- date: 2025-06
+  type: Events
+  title: "Prof.Park gave an invited talk at the  2025 Workshop on Embodied AI / Physical AI"
+  description: |-
+    News: [Link](https://www.aitimes.kr/news/articleView.html?idxno=35230)
+  image: "media/news/blank.png"
+
+- date: 2025-05
+  type: Events
+  title: "Prof. Park gave an invited talk at the Daegu AI Researchers Forum"
+  description: |-
+    News: [Link](https://darf-forum.kr/sub02/sub02.asp?snm=139)
+  image: "media/news/DARF.png"
+
+- date: 2025-05
+  type: Events
+  title: "Prof. Park gave an invited talk on the top-tier AI conference session at the Spring Conference of the Korean Society of Automotive Engineers"
+  description: |-
+    News: [Link](https://www.ksae.org/workshop/202501/program/studygroup.php)
+  image: "media/news/한국자동차공학회.png"
+
+- date: 2025-03
+  type: Project
+  title: "Received a 6-year research grant from the Ministry of Science and ICT (AI 스타펠로우십  지원)"
+  description: |
+    Project  title: 인간 중심 공생적 임바디드 인공지능 시스템.
+    News: [Link](https://www.newsprime.co.kr/news/article/?no=689300)
+  image: "media/news/MSIT.png"
+
+- date: 2025-02
+  type: publication
+  title: "One paper accepted at CVPR 2025"
+  description: |-
+    We have one paper accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition(CVPR) 2025.
+    <br>The paper is “Multi-modal Knowledge Distillation-based Human Trajectory Forecasting” by Jaewoo Jeong, SeoHee Lee, Daehee Park, Giwon Lee, and Kuk-Jin Yoon.
+  image: "media/news/cvpr_2025.png"
+
+- date: 2025-02
+  type: Events
+  title: "ISL Lab has launched🚀"
+  description: "Intelligent Systems and Learning Laboratory at DGIST EECS has launched in Feb 2025 by Prof. Daehee Park."
+  image: "media/news/logo_news.png"

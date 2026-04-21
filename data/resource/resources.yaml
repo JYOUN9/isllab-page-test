@@ -1,0 +1,31 @@
+
+- title: "Server"
+  sections:
+    - title: "In-House Resources"
+      items:
+        - "NVIDIA RTX A6000 (8ea) / 256GB RAM / 12TB Storage"
+        - "NVIDIA RTX 3090 (8ea) / 256GB RAM / 12TB Storage"
+        - "NVIDIA PRO 6000 (8ea) / 256GB RAM / 12TB Storage"
+        - "NVIDIA PRO 6000 (4ea) / 256GB RAM / 12TB Storage"
+    - title: "Cloud Resources"
+      items:
+        - "NVIDIA H200 (4ea) / 1.48TB RAM / 10TB Storage"
+        - "NVIDIA H200 (4ea) / 1.48TB RAM / 10TB Storage"
+        - "Tesla V100 (2ea) / 300GB RAM / 10TB Storage"
+        - "NVIDIA RTX 3090 (2ea) / 300GB RAM / 10TB Storage"
+
+
+- title: "Robot"
+  robots:
+    - name: "ORCA"
+      image: "orca.jpg"
+    - name: "ORCA"
+      image: "orca.jpg"
+    - name: "ORCA"
+      image: "orca.jpg"
+    - name: "ORCA"
+      image: "orca.jpg"
+    - name: "ORCA"
+      image: "orca.jpg"
+    - name: "ORCA"
+      image: "orca.jpg"
