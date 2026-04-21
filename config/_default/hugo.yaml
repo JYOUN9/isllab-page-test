@@ -33,6 +33,10 @@ defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
 
 ############################
 ## ADVANCED
