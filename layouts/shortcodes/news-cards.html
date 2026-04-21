@@ -378,7 +378,7 @@
       {{ $newsAnchorHref := printf "news/#news-item-%d" $index | relURL }}
       {{ $itemDescHTML := replaceRE `\r\n?` "\n" $itemDesc }}
       {{ $itemDescHTML = replaceRE `\\n` "\n" $itemDescHTML }}
-      {{ $itemDescHTML = replaceRE `\n{2,}` "\n" $itemDescHTML }}
+      {{ $itemDescHTML = replaceRE `(?i)<br\s*/?>` "<br /><br />" $itemDescHTML }}
       {{ $itemDescHTML = replaceRE `\[(.*?)\]\(([^)]+)\)` `<a href="$2" target="_blank" rel="noopener" class="underline">$1</a>` $itemDescHTML }}
       {{ if $itemURL }}
         {{ $itemDescHTML = replaceRE `\[Link\]` (printf `<a href="%s" target="_blank" rel="noopener" class="underline">Link</a>` $itemURL) $itemDescHTML }}
