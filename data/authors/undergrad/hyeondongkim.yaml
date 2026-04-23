@@ -9,8 +9,9 @@ name:
 role: Intern
 bio: B.S., DGIST
 tags:
-  - Multimodal A.I.
   - Physical A.I.
+  - Human Motion Modeling
+hidden_image: hyeondongkim.png
 links:
   - icon: at-symbol
     url: mailto:hdkim@dgist.ac.kr
@@ -18,3 +19,9 @@ links:
   - icon: homepage
     url: https://hyun-east.github.io/
     label: Homepage
+  - icon: brands/github
+    url: https://github.com/hyun-east
+    label: GitHub
+  - icon: brands/linkedin
+    url: http://www.linkedin.com/in/hdkim2005
+    label: LinkedIn

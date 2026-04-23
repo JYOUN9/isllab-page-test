@@ -11,8 +11,20 @@ bio: B.S., DGIST
 tags:
   - Multimodal A.I.
   - Physical A.I.
+hidden_image: donghyeonsoon.png
 links:
   - icon: at-symbol
     url: mailto:dhsoon@dgist.ac.kr
     label: Email
-
+  - icon: homepage
+    url: https://dhsoon02.github.io
+    label: Homepage
+  - icon: brands/github
+    url: https://github.com/dhsoon02
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/donghyeon-soon
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=6I7S3sgAAAAJ&hl=en
+    label: Google Scholar

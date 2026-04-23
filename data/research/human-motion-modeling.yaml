@@ -1,6 +1,6 @@
 slug: human-motion-modeling
 title: Human Motion Modeling
-category: Physical A.I.
+#category: Physical A.I.
 pair_gap: 70
 pair_side_padding: 0
 description: Research on modeling and generating human motion using generative AI techniques.

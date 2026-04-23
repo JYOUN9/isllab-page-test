@@ -1,6 +1,6 @@
 slug: world-model
 title: World Model
-category: Intelligent Systems
+#category: Intelligent Systems
 pair_gap: 52
 pair_side_padding: 0
 description: Research on developing AI systems that can represent and reason about the world in a structured way.

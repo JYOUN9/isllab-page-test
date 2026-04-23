@@ -45,13 +45,17 @@
   function initPeopleHoverImages() {
     document.querySelectorAll('img[data-hover-src]').forEach(function(img) {
       if (img.dataset.hoverBound === 'true') return;
+
       const hoverSrc = (img.getAttribute('data-hover-src') || '').trim();
       if (!hoverSrc) return;
-
-      img.dataset.hoverBound = 'true';
       const baseSrc = (img.getAttribute('src') || '').trim();
       if (!baseSrc) return;
-      img.dataset.baseSrc = baseSrc;
+      const frame = img.closest('.people-photo-frame');
+      if (!frame) return;
+
+      img.dataset.hoverBound = 'true';
+      frame.style.position = 'relative';
+      frame.style.overflow = 'hidden';
 
       let hoverReady = false;
       const preload = new Image();
@@ -59,23 +63,47 @@
       preload.onerror = function() { hoverReady = false; };
       preload.src = hoverSrc;
 
+      function createImageLayer(src, zIndex) {
+        const layer = document.createElement('img');
+        layer.src = src;
+        layer.alt = img.alt || '';
+        layer.setAttribute('aria-hidden', 'true');
+        layer.style.position = 'absolute';
+        layer.style.inset = '0';
+        layer.style.width = '100%';
+        layer.style.height = '100%';
+        layer.style.objectFit = 'cover';
+        layer.style.objectPosition = 'center top';
+        layer.style.opacity = '0';
+        layer.style.pointerEvents = 'none';
+        layer.style.borderRadius = 'inherit';
+        layer.style.zIndex = zIndex;
+        return layer;
+      }
+
+      const hoverLayer = createImageLayer(hoverSrc, '2');
+      frame.appendChild(hoverLayer);
+
+      const enterDuration = 260;
+      const enterDelay = 140;
+      const leaveDuration = 220;
+
       function showHover() {
-        if (hoverReady) img.src = hoverSrc;
+        if (!hoverReady) return;
+        hoverLayer.style.transition =
+          'opacity ' + enterDuration + 'ms ease ' + enterDelay + 'ms';
+        hoverLayer.style.opacity = '1';
       }
 
       function showBase() {
-        img.src = img.dataset.baseSrc || baseSrc;
+        hoverLayer.style.transition = 'opacity ' + leaveDuration + 'ms ease 0ms';
+        hoverLayer.style.opacity = '0';
       }
 
-      img.addEventListener('mouseenter', showHover);
-      img.addEventListener('mouseleave', showBase);
-      img.addEventListener('focus', showHover);
-      img.addEventListener('blur', showBase);
-      img.addEventListener('error', function() {
-        if ((img.getAttribute('src') || '').trim() === hoverSrc) {
-          showBase();
-        }
-      });
+      frame.addEventListener('mouseenter', showHover);
+      frame.addEventListener('mouseleave', showBase);
+      frame.addEventListener('focusin', showHover);
+      frame.addEventListener('focusout', showBase);
     });
   }
 

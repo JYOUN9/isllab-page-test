@@ -1,6 +1,6 @@
 slug: self-evolving-ai
 title: Self-Evolving A.I.
-category: Intelligent Systems
+#category: Intelligent Systems
 pair_gap: 24
 pair_side_padding: 0
 description: Developing AI systems that can continuously learn and adapt to new information and environments.

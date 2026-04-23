@@ -14,8 +14,8 @@ status:
 role: M.S. Student
 bio: 
 tags:
-  - Multimodal A.I.
   - Physical A.I.
+  - Computer Vision
 affiliations:
   - name: DGIST
     url: https://www.dgist.ac.kr/en_eecs/index.do
@@ -27,7 +27,7 @@ links:
     url: 
     label: Homepage
   - icon: brands/github
-    url: 
+    url: https://github.com/i0j1005
     label: GitHub
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/youngjin-park-47490120b/

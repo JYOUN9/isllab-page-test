@@ -1,4 +1,8 @@
 <style>
+  :root {
+    --project-max-width: 1280px;
+  }
+
   /* Override all possible container classes */
   #project .container,
   #project .prose,
@@ -10,13 +14,15 @@
   [id="project"] .prose,
   [id="project"] > div,
   [id="project"] > div > div {
-    max-width: 100% !important;
+    max-width: var(--project-max-width) !important;
     width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   section[id="project"] [class*="max-w"],
   [id="project"] [class*="max-w"] {
-    max-width: 100% !important;
+    max-width: var(--project-max-width) !important;
   }
 
   .project-section + .project-section {
@@ -79,13 +85,6 @@
     line-height: 1.35;
   }
 
-  @media (min-width: 1024px) {
-    /* Align Duration line starts when cards are in 3-column layout */
-    .project-card-title {
-      min-height: calc(1.35em * 2);
-    }
-  }
-
   .project-section-empty {
     margin-top: 0.85rem;
     font-size: 0.9rem;
@@ -142,7 +141,7 @@
 {{ $projects := sort (site.Data.projects.projects | default (slice)) "start" "desc" }}
 {{ $sections := slice "On-Going Projects" "Completed Projects" }}
 
-<div style="width: 100%; max-width: 100%; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem;">
+<div style="width: 100%; max-width: var(--project-max-width); margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem;">
   <div id="project-sections" class="project-sections">
     {{ range $sectionName := $sections }}
       {{ $sectionProjects := slice }}
@@ -164,7 +163,7 @@
         <h2 class="project-section-title">{{ $sectionName }}</h2>
         <div class="project-section-divider"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 gap-4">
           {{ range $sectionProjects }}
             {{ $itemStatus := lower (.status | default "") }}
             {{ $isCompleted := in $itemStatus "completed" }}

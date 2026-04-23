@@ -50,39 +50,6 @@
     background-color: #2563eb;
   }
 
-  .research-area-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-
-  .research-area-row > span {
-    padding-top: 0.45rem;
-    white-space: nowrap;
-  }
-
-  .research-area-filter {
-    display: block;
-    margin-top: 0;
-  }
-
-  .research-area-grid-wrap {
-    max-width: 100%;
-    overflow-x: auto;
-  }
-
-  .research-area-grid {
-    display: grid;
-    grid-template-columns: repeat(5, max-content);
-    column-gap: 0.5rem;
-    row-gap: 0.22rem;
-    width: max-content;
-  }
-
-  .research-area-grid .filter-btn {
-    justify-self: stretch;
-  }
-  
   .publication-card {
     display: flex;
     flex-direction: column;
@@ -242,27 +209,6 @@
     </div>
   </div>
 
-  <!-- Filter by Research Area -->
-  <div class="mb-6 research-area-row">
-    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Filter by Research Area:</span>
-    <div class="research-area-filter">
-      <div class="research-area-grid-wrap">
-        <div class="research-area-grid">
-          <button class="filter-btn active" data-filter="researchMethod" data-value="all">All</button>
-          <button class="filter-btn" data-filter="researchMethod" data-value="self-evolving a.i.">Self-Evolving A.I.</button>
-          <button class="filter-btn" data-filter="researchMethod" data-value="knowledge integration">Knowledge Integration</button>
-          <button class="filter-btn" data-filter="researchMethod" data-value="world model">World Model</button>
-          <button class="filter-btn" data-filter="researchMethod" data-value="on-device a.i.">On-Device A.I.</button>
-          <button class="filter-btn active" data-filter="researchDomain" data-value="all">All</button>
-          <button class="filter-btn" data-filter="researchDomain" data-value="robotic a.i.">Robotic A.I.</button>
-          <button class="filter-btn" data-filter="researchDomain" data-value="autonomous driving">Autonomous Driving</button>
-          <button class="filter-btn" data-filter="researchDomain" data-value="human motion modeling">Human Motion Modeling</button>
-          <button class="filter-btn" data-filter="researchDomain" data-value="computer vision">Computer Vision</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
   <!-- Divider below filters -->
   <div class="mb-6 mt-2" style="border-bottom: 2px solid #3b82f6;"></div>
   
@@ -296,14 +242,6 @@
     {{ $hasCode := ne $code "" }}
     {{ $hasLink := ne $link "" }}
     {{ $hasLinks := or $hasPaper (or $hasSupp (or $hasPage (or $hasCode $hasLink))) }}
-    {{ $methodText := "" }}
-    {{ if $item.method }}
-      {{ $methodText = printf "%v" $item.method }}
-    {{ end }}
-    {{ $domainText := "" }}
-    {{ if $item.domain }}
-      {{ $domainText = printf "%v" $item.domain }}
-    {{ end }}
     {{ $category := "" }}
     {{ $categoryFilterKey := "other" }}
     {{ $categoryClass := "publication-category-conference" }}
@@ -341,8 +279,6 @@
       class="publication-card bg-white dark:bg-gray-800 rounded-lg shadow-md px-6 pt-3 pb-6 hover:shadow-lg transition-shadow"
       data-year="{{ $year }}"
       data-category="{{ $categoryFilterKey }}"
-      data-method="{{ lower $methodText }}"
-      data-domain="{{ lower $domainText }}"
       data-title="{{ lower $item.title }}"
       data-authors="{{ lower (delimit $item.authors " ") }}"
     >
@@ -429,20 +365,7 @@
   
   let activeFilters = {
     category: 'all',
-    researchMethod: 'all',
-    researchDomain: 'all',
     search: ''
-  };
-
-  const areaAliases = {
-    'self-evolving a.i.': ['self-evolving a.i.', 'self evolving ai', 'self-evolving ai'],
-    'knowledge integration': ['knowledge integration'],
-    'world model': ['world model'],
-    'on-device a.i.': ['on-device a.i.', 'on device ai', 'on-device ai'],
-    'robotic a.i.': ['robotic a.i.', 'robotic ai', 'robotics ai'],
-    'autonomous driving': ['autonomous driving'],
-    'human motion modeling': ['human motion modeling', 'human motion modelling'],
-    'computer vision': ['computer vision']
   };
   
   // Scroll animation observer
@@ -459,27 +382,9 @@
     });
   }, observerOptions);
   
-  function normalizeAreaText(value) {
-    return (value || '')
-      .toLowerCase()
-      .replace(/\./g, '')
-      .replace(/-/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-  }
-
-  function hasAreaOverlap(sourceText, areaKey) {
-    const source = normalizeAreaText(sourceText);
-    if (!source) return false;
-    const aliases = areaAliases[areaKey] || [areaKey];
-    return aliases.some((alias) => source.includes(normalizeAreaText(alias)));
-  }
-  
   function filterPublications() {
     publicationCards.forEach(card => {
       const cardCategory = card.getAttribute('data-category') || '';
-      const cardMethod = card.getAttribute('data-method') || '';
-      const cardDomain = card.getAttribute('data-domain') || '';
       const cardTitle = card.getAttribute('data-title') || '';
       const cardAuthors = card.getAttribute('data-authors') || '';
       
@@ -505,19 +410,7 @@
         searchMatch = cardTitle.includes(searchLower) || cardAuthors.includes(searchLower);
       }
 
-      // Research method filter (top row)
-      let researchMethodMatch = true;
-      if (activeFilters.researchMethod !== 'all') {
-        researchMethodMatch = hasAreaOverlap(cardMethod, activeFilters.researchMethod);
-      }
-
-      // Research domain filter (bottom row)
-      let researchDomainMatch = true;
-      if (activeFilters.researchDomain !== 'all') {
-        researchDomainMatch = hasAreaOverlap(cardDomain, activeFilters.researchDomain);
-      }
-      
-      if (categoryMatch && searchMatch && researchMethodMatch && researchDomainMatch) {
+      if (categoryMatch && searchMatch) {
         card.classList.remove('hidden');
         // Reset and re-observe for animation
         if (!card.classList.contains('visible')) {

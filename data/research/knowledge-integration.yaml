@@ -1,6 +1,6 @@
 slug: knowledge-integration
 title: Knowledge Integration
-category: Intelligent Systems
+#category: Intelligent Systems
 pair_gap: 24
 pair_side_padding: 0
 description: Research on integrating knowledge from multiple sources and modalities to enhance AI systems' understanding and decision-making capabilities.
