@@ -181,14 +181,24 @@
   /* Override all possible container classes */
   #research .container,
   #research .prose,
+  #research-topic .container,
+  #research-topic .prose,
   section[id="research"] .container,
   section[id="research"] .prose,
+  section[id="research-topic"] .container,
+  section[id="research-topic"] .prose,
   section[id="research"] > *,
   section[id="research"] > * > *,
+  section[id="research-topic"] > *,
+  section[id="research-topic"] > * > *,
   [id="research"] .container,
   [id="research"] .prose,
+  [id="research-topic"] .container,
+  [id="research-topic"] .prose,
   [id="research"] > div,
-  [id="research"] > div > div {
+  [id="research"] > div > div,
+  [id="research-topic"] > div,
+  [id="research-topic"] > div > div {
     max-width: var(--research-max-width) !important;
     width: 100% !important;
     margin-left: auto !important;
@@ -196,8 +206,23 @@
   }
   /* Target any max-width classes */
   section[id="research"] [class*="max-w"],
-  [id="research"] [class*="max-w"] {
+  [id="research"] [class*="max-w"],
+  section[id="research-topic"] [class*="max-w"],
+  [id="research-topic"] [class*="max-w"] {
     max-width: var(--research-max-width) !important;
+  }
+
+  /* Homepage markdown wrapper defaults to max-w-prose; force full research-topic width */
+  section[id="research-topic"] > div[class*="max-w-prose"] {
+    width: 100% !important;
+    max-width: var(--research-max-width) !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  section[id="research-topic"] > div[class*="max-w-prose"] > .prose {
+    width: 100% !important;
+    max-width: 100% !important;
   }
   
   /* Scroll animation styles */
