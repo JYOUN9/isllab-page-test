@@ -4,7 +4,7 @@ title: Computer Vision & Multimodal A.I.
 pair_gap: 24
 pair_side_padding: 0
 description: Developing high-level scene understanding models such as semantic segmentation, object detection, and scene reconstruction for autonomous systems, robotics, and other applications.
-image: 
+image: multimodal-ai.jpg
 #url: https://example.com/quantum-ml
 order: 8
 

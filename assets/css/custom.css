@@ -152,6 +152,36 @@ section#section-hero > .home-section-bg.bg-image {
   margin-left: 20px !important;
 }
 
+/* Mobile layout guard: prevent page width collapse/blank strip on the right */
+@media (max-width: 767px) {
+  html,
+  body,
+  #top,
+  .page-wrapper,
+  .page-header,
+  .page-body,
+  .page-footer {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .page-body > section,
+  .page-body .hbb-section,
+  #site-header,
+  #site-header .navbar {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  body {
+    overflow-x: hidden !important;
+  }
+
+  #site-header .navbar > div:first-child {
+    margin-left: 0 !important;
+  }
+}
+
 /* 현재 탭 언더바 */
 :root {
   --nav-accent: #3b82f6; /* nav hover/accent color */
@@ -202,6 +232,12 @@ html:not(.dark) section[id]:not(#section-hero) {
   background-color: #f2f4f7 !important;
 }
 
+/* Make key content cards blend with page background */
+html:not(.dark) #publications .publication-card,
+html:not(.dark) #project .project-card {
+  background-color: #f2f4f7 !important;
+}
+
 /* Global dark mode surface tuning: gray section background + translucent navy cards */
 .dark body,
 .dark main {
@@ -209,6 +245,11 @@ html:not(.dark) section[id]:not(#section-hero) {
 }
 
 .dark section[id]:not(#section-hero) {
+  background-color: #374151 !important;
+}
+
+.dark #publications .publication-card,
+.dark #project .project-card {
   background-color: #374151 !important;
 }
 
