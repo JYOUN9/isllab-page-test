@@ -10,9 +10,15 @@ role: Intern
 bio: B.S., DGIST
 tags:
   - Physical A.I.
-  - Autonomous Driving
+  - Autonomous Driving A.I.
 links:
   - icon: at-symbol
     url: mailto:seonae@dgist.ac.kr
     label: Email
+  - icon: github
+    url: https://github.com/snb71e/ 
+    label: GitHub
+  - icon: linkedin
+    url: https://www.linkedin.com/in/seonae-jeon-17a211359
+    label: LinkedIn
 
