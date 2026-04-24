@@ -192,6 +192,16 @@ section#section-hero > .home-section-bg.bg-image {
   color: var(--nav-accent)  !important;
 }
 
+/* Light mode surface tuning: slightly gray page background */
+html:not(.dark) body,
+html:not(.dark) main {
+  background-color: #f2f4f7 !important;
+}
+
+html:not(.dark) section[id]:not(#section-hero) {
+  background-color: #f2f4f7 !important;
+}
+
 /* Global dark mode surface tuning: gray section background + translucent navy cards */
 .dark body,
 .dark main {
