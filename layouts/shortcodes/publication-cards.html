@@ -281,6 +281,10 @@
       data-category="{{ $categoryFilterKey }}"
       data-title="{{ lower $item.title }}"
       data-authors="{{ lower (delimit $item.authors " ") }}"
+      data-venue="{{ lower (printf "%v" ($item.venue | default "")) }}"
+      data-method="{{ lower (printf "%v" ($item.method | default "")) }}"
+      data-domain="{{ lower (printf "%v" ($item.domain | default "")) }}"
+      data-task="{{ lower (printf "%v" ($item.task | default "")) }}"
     >
       {{ if $category }}
         <span class="publication-category-badge inline-block px-3 py-1 text-xs md:text-sm font-semibold rounded-full {{ $categoryClass }}">{{ $category }}</span>
@@ -387,6 +391,11 @@
       const cardCategory = card.getAttribute('data-category') || '';
       const cardTitle = card.getAttribute('data-title') || '';
       const cardAuthors = card.getAttribute('data-authors') || '';
+      const cardVenue = card.getAttribute('data-venue') || '';
+      const cardMethod = card.getAttribute('data-method') || '';
+      const cardDomain = card.getAttribute('data-domain') || '';
+      const cardTask = card.getAttribute('data-task') || '';
+      const cardYear = card.getAttribute('data-year') || '';
       
       // Category filter
       let categoryMatch = true;
@@ -407,7 +416,14 @@
       let searchMatch = true;
       if (activeFilters.search) {
         const searchLower = activeFilters.search.toLowerCase();
-        searchMatch = cardTitle.includes(searchLower) || cardAuthors.includes(searchLower);
+        searchMatch =
+          cardTitle.includes(searchLower) ||
+          cardAuthors.includes(searchLower) ||
+          cardVenue.includes(searchLower) ||
+          cardMethod.includes(searchLower) ||
+          cardDomain.includes(searchLower) ||
+          cardTask.includes(searchLower) ||
+          cardYear.includes(searchLower);
       }
 
       if (categoryMatch && searchMatch) {

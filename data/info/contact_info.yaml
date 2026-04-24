@@ -15,7 +15,7 @@ items:
     title_icon: /media/icon/address.svg
     value: |-
       DGIST: DGIST, 333 Techno Jungang-daero, Hyeonpung-eup, Dalseong-gun, Daegu, Republic of Korea
-      Prof. Office: DGIST E3 - 216
+      Prof. Office: DGIST E3 - 213
       Lab Office: DGIST E3 - 206 / E3 - 516
 
   - name: Links
@@ -36,4 +36,8 @@ items:
       - label: Apply
         url: https://forms.gle/EZTdExuBqut9GR817
         icon: /media/icon/form.svg
+      - label: Calendar
+        url: https://sites.google.com/view/isllab-dgist/calendar
+        text: Lab Calendar
+        icon: /media/icon/calendar.svg
 

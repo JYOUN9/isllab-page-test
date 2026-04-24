@@ -24,7 +24,7 @@ sections:
         text: "We are welcoming new students and interns."
         link:
           text: "Apply"
-          url: "contact/"
+          url: "info/"
     design:
       no_padding: true
       # For full-screen, add `min-h-screen` below

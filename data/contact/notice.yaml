@@ -1,0 +1,18 @@
+subsections:
+  - subtitle: "Korean"
+    content: |
+      ISL Lab과 함께할 열정적이고 성실한 연구 학생(석/박사과정, 학부 인턴)을 기다립니다.
+      멀티모달 학습과 피지컬 AI(Physical AI) 연구에 흥미가 있다면 편하게 지원해 주세요.
+      하단의 Apply 버튼을 눌러 Google Form으로 지원할 수 있으며, 관심 연구 주제와 함께 CV 및 성적표를 첨부해 주세요.
+
+  - subtitle: "English"
+    content: |
+      The ISL Lab is currently recruiting passionate and diligent research students (MS/PhD programs and undergraduate interns).
+      If you are interested in Multimodal Learning and Physical AI, please feel free to apply.
+      Click the Apply button below to access the Google Form, and please include your research interests, CV, and academic transcript.
+
+buttons:
+  - label: "Join us 🚀"
+    url: "https://docs.google.com/forms/d/e/1FAIpQLScYQf-lwtDU-QAPXjflb9WH-COt_b2Xl5a8rkQEoPiPzWjOdA/viewform?usp=header"
+    variant: "primary"
+    new_tab: false

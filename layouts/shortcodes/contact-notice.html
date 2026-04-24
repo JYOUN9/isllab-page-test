@@ -1,0 +1,77 @@
+{{ $notice := site.Data.contact.notice | default dict }}
+{{ $subsections := $notice.subsections | default (slice) }}
+{{ $buttons := $notice.buttons | default (slice) }}
+
+<style>
+  #notice .max-w-prose {
+    max-width: min(900px, 90vw) !important;
+    width: 100% !important;
+  }
+
+  #notice .contact-notice-wrap {
+    font-size: 0.98rem;
+    line-height: 1.72;
+    color: #334155;
+  }
+
+  #notice .contact-notice-subsection + .contact-notice-subsection {
+    margin-top: 1.1rem;
+  }
+
+  #notice .contact-notice-subtitle {
+    margin: 0 0 0.35rem 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e3a8a;
+  }
+
+  #notice .contact-notice-content p {
+    margin: 0;
+  }
+
+  #notice .contact-notice-content p + p {
+    margin-top: 0.9rem;
+  }
+
+  .dark #notice .contact-notice-wrap {
+    color: #cbd5e1;
+  }
+
+  .dark #notice .contact-notice-subtitle {
+    color: #93c5fd;
+  }
+</style>
+
+<div class="contact-notice-wrap">
+  {{ if gt (len $subsections) 0 }}
+    {{ range $subsections }}
+      <div class="contact-notice-subsection">
+        {{ if .subtitle }}<h3 class="contact-notice-subtitle">{{ .subtitle }}</h3>{{ end }}
+        {{ with .content }}
+          <div class="contact-notice-content">{{ . | markdownify }}</div>
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ else if $notice.content }}
+    <div class="contact-notice-content">{{ $notice.content | markdownify }}</div>
+  {{ end }}
+
+  {{ if gt (len $buttons) 0 }}
+    <div class="mt-10 flex flex-wrap justify-center gap-3">
+      {{ range $buttons }}
+        {{ $variant := lower (.variant | default "primary") }}
+        {{ $isSecondary := eq $variant "secondary" }}
+        {{ $href := .url | default "#" }}
+        {{ $label := .label | default "Button" }}
+        {{ $newTab := .new_tab | default false }}
+        <a
+          href="{{ $href | safeURL }}"
+          {{ if $newTab }}target="_blank" rel="noopener noreferrer"{{ end }}
+          class="inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold no-underline {{ if $isSecondary }}text-blue-600 bg-white border border-blue-600 hover:bg-blue-50{{ else }}text-white bg-blue-600 hover:bg-blue-700{{ end }}"
+        >
+          {{ $label }}
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

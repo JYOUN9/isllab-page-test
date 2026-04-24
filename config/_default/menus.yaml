@@ -30,9 +30,12 @@ main:
   - name: Gallery
     url: /gallery/
     weight: 40
+  - name: Info
+    url: /info/
+    weight: 41
   - name: Contact
     url: /contact/
-    weight: 41
+    weight: 42
   # - name: Resources
   #   weight: 40
   #   hasChildren: true

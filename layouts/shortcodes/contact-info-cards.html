@@ -1,4 +1,4 @@
-{{ $items := site.Data.contact.contact_info.items | default (slice) }}
+{{ $items := site.Data.info.contact_info.items | default (slice) }}
 
 <style>
   #contact-info .max-w-prose,
@@ -214,7 +214,7 @@
                     <span>{{ .label }}:</span>
                   </span>
                   <span class="contact-info-link-text">
-                    <a class="contact-info-link-url" href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer">{{ .url }}</a>
+                    <a class="contact-info-link-url" href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer">{{ .text | default .url }}</a>
                   </span>
                 </div>
               {{ end }}
