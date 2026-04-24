@@ -1,14 +1,14 @@
-schema: hugoblox/author/v1
-slug: jeayoungchoi
-is_owner: false
-category: Alumni
-order: 2
-name:
-  display: Mincheol Kang
-  given: Mincheol
-  family: Kang
-  pronunciation: mincheol kang
-  pronouns: he/him
-course: B.S. Student
-next: "KAIST M.S. Student"
-graduated: "2025 Fall"
+#schema: hugoblox/author/v1
+#slug: jeayoungchoi
+#is_owner: false
+#category: Alumni
+#order: 2
+#name:
+#  display: Mincheol Kang
+#  given: Mincheol
+#  family: Kang
+#  pronunciation: mincheol kang
+#  pronouns: he/him
+#course: B.S. Student
+#next: "KAIST M.S. Student"
+#graduated: "2025 Fall"

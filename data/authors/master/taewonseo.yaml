@@ -16,8 +16,8 @@ role: |-
   Lab Representative
 bio: 
 tags:
+  - Physical A.I.
   - Knowledge Integration
-  - Robotic A.I.
 affiliations:
   - name: DGIST
     url: https://www.dgist.ac.kr/en_eecs/index.do
@@ -29,10 +29,10 @@ links:
     url: 
     label: Homepage
   - icon: brands/github
-    url: 
+    url: https://github.com/taewon-seo
     label: GitHub
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/taewon-seo-ba1286376/
+    url: www.linkedin.com/in/taewon-seo-ba1286376
     label: LinkedIn
   - icon: academicons/google-scholar
     url: 
