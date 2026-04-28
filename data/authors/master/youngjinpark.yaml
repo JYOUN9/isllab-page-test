@@ -16,6 +16,7 @@ bio:
 tags:
   - Physical A.I.
   - Multimodal Learning
+hidden_image: youngjinpark.jpg
 affiliations:
   - name: DGIST
     url: https://www.dgist.ac.kr/en_eecs/index.do
@@ -24,7 +25,7 @@ links:
     url: mailto:yj100520@dgist.ac.kr
     label: E-mail Me
   - icon: homepage
-    url: 
+    url: https://i0j1005.github.io/
     label: Homepage
   - icon: brands/github
     url: https://github.com/i0j1005
