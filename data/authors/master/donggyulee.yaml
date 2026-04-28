@@ -15,8 +15,9 @@ role: M.S. Student
 bio: 
 tags:
   - Self-Evolving A.I.
-  - Physical A.I.
+  - Knowledge Integration
   - Human Centric A.I.
+hidden_image: donggyulee.jpeg
 affiliations:
   - name: DGIST
     url: https://www.dgist.ac.kr/en_eecs/index.do
@@ -25,14 +26,14 @@ links:
     url: mailto:idonggyu0806@dgist.ac.kr
     label: E-mail Me
   - icon: homepage
-    url: 
+    url: https://sleet-orchid-513.notion.site/AIsight-244842a882a34ad2a8745c6ddde96b88?pvs=74
     label: Homepage
   - icon: brands/github
-    url: 
+    url:  https://github.com/idonggyu-L
     label: GitHub
   - icon: brands/linkedin
     url: 
     label: LinkedIn
   - icon: academicons/google-scholar
-    url: 
+    url: https://scholar.google.com/citations?view_op=list_works&hl=ko&user=auKZ_hkAAAAJ&gmla=AIqSsVs9FKyrCmV-wO43QUpPisAYFNk1tG5CqN_UybUCYQAt87IUGCzKStkEKQ1L64r1xMxD9WvJtOdkJeINbCgMhHeX9q_0H8FXpBwh2olwCcFhR0wSMIMQGxFMD68&sciund=3946421777856811102
     label: Google Scholar
